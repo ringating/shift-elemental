@@ -45,7 +45,7 @@ public class CharController : MonoBehaviour
 	{
 		RelativeRigidUpdate();
 		Jump();
-		//Look();
+		Look();
 		Walk();
 		Drift();
 		PlatDrop();

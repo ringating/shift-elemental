@@ -4,30 +4,46 @@ using UnityEngine;
 
 public class CharState : MonoBehaviour
 {
+	// general
 	public int state = 0; // 0 is none, 1 is fire, 2 is ice, 3 is earth
 	public int charge = 0;
-
-	public GameObject iceSpear;
-	public float iceSpearLaunchOffset;
-	public float iceSpearHopSpeed;
-
+	public int maxCharge = 3;
 
 	public CharInput input;
 	public CharController ctrl;
 
-
 	public bool facingRight = true;
 
-	// Use this for initialization
+	public float maxHealth = 100;
+	public float health;
+
+	// default state
+	public AbsorbTrigger absorb;
+	
+	// fire state
+
+	// ice state
+	public GameObject iceSpear;
+	public float iceSpearLaunchOffset;
+	public float iceSpearHopSpeed;
+
+	// grass state
+	
+
 	void Start ()
 	{
 		input = GetComponent<CharInput>();
 		ctrl = GetComponent<CharController>();
+		health = maxHealth;
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
+		if (charge <= 0)
+		{
+			state = 0;
+		}
+
 		switch (state)
 		{
 			case 0:
@@ -75,7 +91,14 @@ public class CharState : MonoBehaviour
 
 	private void NoPower()
 	{
-		
+		// parry/absorb
+		if (input.action1)
+		{
+			absorb.Activate();
+		}
+
+		// heal?
+		if (input.action2Down){}
 	}
 
 	private void Fire()
@@ -99,6 +122,9 @@ public class CharState : MonoBehaviour
 
 			// also jump a tiny bit
 			ctrl.IceJump(iceSpearHopSpeed);
+
+			// decrement charge
+			charge--;
 		}
 
 		// aoe freeze
@@ -116,5 +142,15 @@ public class CharState : MonoBehaviour
 	private void ChangeState()
 	{
 
+	}
+
+	public void Damaged(float damage)
+	{
+		health -= damage;
+	}
+
+	public void Damaged(int damage)
+	{
+		Damaged((float)damage);
 	}
 }

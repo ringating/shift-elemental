@@ -6,9 +6,10 @@ public class CharInput : MonoBehaviour
 {
 	public bool useController;
 	public float deadzoneRadius;
+
 	public Vector2 move = Vector2.zero;
-	[HideInInspector]
 	public Vector2 aim = Vector2.zero;
+
 	public bool jump = false;
 	public bool action1 = false;
 	public bool action2 = false;
@@ -45,14 +46,14 @@ public class CharInput : MonoBehaviour
 	private void UpdateVars()
 	{
 		// movement vector
-		move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+		move = new Vector2(Input.GetAxisRaw("Left Horizontal"), Input.GetAxisRaw("Left Vertical"));
 		if (move.magnitude < deadzoneRadius)
 		{
 			move = Vector2.zero;
 		}
 
 		//aiming vector
-		aim = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+		aim = new Vector2(Input.GetAxisRaw("Right Horizontal"), Input.GetAxisRaw("Right Vertical"));
 		if (aim.magnitude < deadzoneRadius)
 		{
 			aim = Vector2.zero;
