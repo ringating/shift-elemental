@@ -27,6 +27,9 @@ public class CharController : MonoBehaviour
 	private int numContacts;
 	private Rigidbody2D relativeRigid = null;
 
+	//private RaycastHit2D rh;
+	//private CircleCollider2D cc;
+
 	[SerializeField]
 	private bool grounded = false;
 	[SerializeField]
@@ -43,7 +46,6 @@ public class CharController : MonoBehaviour
 	
 	void Update ()
 	{
-		RelativeRigidUpdate();
 		Jump();
 		Look();
 		Walk();
@@ -52,6 +54,11 @@ public class CharController : MonoBehaviour
 
 		velocity = rigid.velocity;
 		speed = rigid.velocity.magnitude;
+	}
+
+	private void FixedUpdate()
+	{
+		RelativeRigidUpdate();
 	}
 
 	/*private void OnCollisionEnter2D(Collision2D collision)
@@ -117,6 +124,29 @@ public class CharController : MonoBehaviour
 	{
 		grounded = true;
 	}
+
+	/*
+	private void AlternativeGrounded() // not used, don't bother
+	{
+		rh = Physics2D.CircleCast
+		(
+			new Vector2(transform.position.x + cc.offset.x, transform.position.y + cc.offset.y), //origin
+			cc.radius, //radius
+			Vector2.zero, //direction
+			0, //distance
+			~(1<<9) //layer mask
+		);
+
+		if (rh)
+		{
+			if (rh.collider.GetComponent<TogglePlat>() != null)
+			{
+				plat = rh.collider.GetComponent<TogglePlat>().plat;
+				// not sure how to make this work for leaving collision though...
+			}
+		}
+	}
+	*/
 
 	private void Jump()
 	{
@@ -228,16 +258,16 @@ public class CharController : MonoBehaviour
 		if (relativeRigid != null)
 		{
 			//rigid.MovePosition(rigid.position + relativeRigid.velocity * Time.deltaTime);
-			rigid.position += relativeRigid.velocity * Time.deltaTime;
+			rigid.position += relativeRigid.velocity * Time.fixedDeltaTime;
 			//rigid.velocity += relativeRigid.velocity * Time.deltaTime;
 
-			visuals.useApproximation = true;
-			visuals.targetLerpVal = 29f;
+			//visuals.useApproximation = true;
+			//visuals.targetLerpVal = 29f;
 		}
 		else
 		{
-			visuals.useApproximation = false;
-			visuals.targetLerpVal = 1;
+			//visuals.useApproximation = false;
+			//visuals.targetLerpVal = 1;
 		}
 	}
 

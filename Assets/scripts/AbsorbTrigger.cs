@@ -21,42 +21,13 @@ public class AbsorbTrigger : MonoBehaviour
 	private void Start ()
 	{
 		trigger = GetComponent<CircleCollider2D>();
+		//trigger.enabled = false;
 	}
 	
 	// Update is called once per frame
 	private void Update ()
 	{
-		if (activeTimer > 0)
-		{
-			activeTimer -= Time.deltaTime;
-		}
-		else
-		{
-			activeTimer = 0;
-		}
-
-		if (cooldownTimer > 0)
-		{
-			cooldownTimer -= Time.deltaTime;
-		}
-		else
-		{
-			cooldownTimer = 0;
-
-		}
-
-		if (inputDown)
-		{
-			if (absorbAvailable && inputReleased)
-			{
-				EnableAbsorb();
-				absorbAvailable = false;
-			}
-		}
-		else
-		{
-			inputReleased = true;
-		}
+		
 	}
 
 	public void Activate()
