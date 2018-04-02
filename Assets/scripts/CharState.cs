@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement; // this probably won't be needed once Die() has been updated
+
 public class CharState : MonoBehaviour
 {
 	// general
@@ -39,6 +41,17 @@ public class CharState : MonoBehaviour
 	
 	void Update ()
 	{
+		if (health < 0)
+		{
+			Die();
+		}
+
+		if (input.cleanse)
+		{
+			charge = 0;
+			state = 0;
+		}
+
 		if (charge <= 0)
 		{
 			state = 0;
@@ -92,13 +105,17 @@ public class CharState : MonoBehaviour
 	private void NoPower()
 	{
 		// parry/absorb
-		if (input.action1)
-		{
-			absorb.Activate();
-		}
+		absorb.SetInput(input.action1);
 
 		// heal?
-		if (input.action2Down){}
+		if (input.action2)
+		{
+			health += Time.deltaTime * 20;
+			if (health > maxHealth)
+			{
+				health = maxHealth;
+			}
+		}
 	}
 
 	private void Fire()
@@ -113,7 +130,7 @@ public class CharState : MonoBehaviour
 		{
 			if (facingRight)
 			{
-				Instantiate(iceSpear, transform.position + new Vector3(iceSpearLaunchOffset,0,0),Quaternion.identity).GetComponent<IceSpear>().goRight = true;
+				Instantiate(iceSpear, transform.position + new Vector3(iceSpearLaunchOffset,0,0), Quaternion.identity).GetComponent<IceSpear>().goRight = true;
 			}
 			else
 			{
@@ -152,5 +169,11 @@ public class CharState : MonoBehaviour
 	public void Damaged(int damage)
 	{
 		Damaged((float)damage);
+	}
+
+	public void Die()
+	{
+		// this just resets the whole scene atm, change to something more reasonable later
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 }

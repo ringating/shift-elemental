@@ -172,6 +172,11 @@ public class CharController : MonoBehaviour
 		}
 	}
 
+	public void Stop()
+	{
+		rigid.velocity = Vector2.zero;
+	}
+
 	private void Look()
 	{
 		/*if (input.move.y < -0.5)

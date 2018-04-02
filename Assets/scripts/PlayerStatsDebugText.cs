@@ -3,20 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChargeDebugText : MonoBehaviour
+public class PlayerStatsDebugText : MonoBehaviour
 {
-	private Text chargeCount;
+	private Text textObj;
 	public CharState player;
 
 	// Use this for initialization
 	void Start ()
 	{
-		chargeCount = GetComponent<Text>();
+		textObj = GetComponent<Text>();
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		chargeCount.text = player.charge.ToString();
+		textObj.text = player.health.ToString() + System.Environment.NewLine + player.charge.ToString();
 	}
 }

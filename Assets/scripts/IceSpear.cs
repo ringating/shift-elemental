@@ -15,6 +15,8 @@ public class IceSpear : MonoBehaviour
 	private RaycastHit2D terrainHit;
 	private RaycastHit2D enemyHit;
 
+	public float lifespan = 3f; // how long (once not flying) until it's destroyed (might eventually remove this for a "destroy when the player jumps off" idea instead)
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -37,11 +39,11 @@ public class IceSpear : MonoBehaviour
 		if (flying)
 		{
 			// move it
-			transform.position += new Vector3(speed*Time.deltaTime,0,0);
+			transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
 
 			// get collisions
-			enemyHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset,0,0), transform.position, 1 << 10);
-			terrainHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11)) );
+			enemyHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, 1 << 10);
+			terrainHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11) | (1 << 12) | (1 << 13)) );
 
 			// check if collided.  ignore player collision, call Damage() if colliding with an enemy, StopFlying() if anything else
 			if (enemyHit)
@@ -55,6 +57,18 @@ public class IceSpear : MonoBehaviour
 				// colliding with anything but player or enemy
 				//Debug.Log("terrain hit, " + terrainHit.collider.gameObject.name);
 				StopFlying();
+			}
+		}
+		else
+		{
+			// not flying, do the timer to destroy
+			if (lifespan > 0)
+			{
+				lifespan -= Time.deltaTime;
+			}
+			else
+			{
+				Destroy(this.gameObject);
 			}
 		}
 	}

@@ -90,11 +90,11 @@ public class CharInput : MonoBehaviour
 		}
 
 		// cleanse (forfeit element)
-		if (Input.GetButton("Fire3"))
+		if (Input.GetButton("Cleanse"))
 		{
 			cleanse = true;
 		}
-		if (Input.GetButtonDown("Fire3"))
+		if (Input.GetButtonDown("Cleanse"))
 		{
 			cleanseDown = true;
 		}
