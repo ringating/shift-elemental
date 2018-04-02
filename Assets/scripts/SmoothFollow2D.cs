@@ -8,6 +8,7 @@ public class SmoothFollow2D : MonoBehaviour
 	public float targetLerpVal;
 	public bool useLateUpdate = false;
 	public bool useApproximation = false;
+	public Vector3 offset = Vector3.zero;
 
 	// Update is called once per frame
 	void Update()

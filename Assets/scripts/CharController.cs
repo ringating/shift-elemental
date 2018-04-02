@@ -36,12 +36,15 @@ public class CharController : MonoBehaviour
 	private Vector2 velocity;
 	[SerializeField]
 	private float speed;
+	
+	public Animator ani;
 
 	void Start ()
 	{
 		rigid = GetComponent<Rigidbody2D>();
 		input = GetComponent<CharInput>();
 		cameraFollowPoint.localPosition = defaultCameraOffset;
+		ani.run = true;
 	}
 	
 	void Update ()
