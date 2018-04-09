@@ -919,6 +919,7 @@ Transform:
   m_Children:
   - {fileID: 521020251}
   - {fileID: 320407161}
+  - {fileID: 1640352925}
   m_Father: {fileID: 700580291}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -960,7 +961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraFollowPoint: {fileID: 521020251}
   defaultCameraOffset: {x: 0, y: 1}
-  maxLookDistance: 3
+  maxLookDistance: 0.5
   jumpSpeed: 10
   maxWalkSpeed: 5
   walkAccel: 80
@@ -2941,6 +2942,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 94e5da227d1f72344b318782db5585e3, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1640352924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1640352925}
+  - component: {fileID: 1640352926}
+  m_Layer: 0
+  m_Name: Butterfly
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1640352925
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640352924}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 476083776}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1640352926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640352924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20dfcb17a24223418dc9e76bf1bf025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minFallSpeed: 0.6
+  maxFallSpeed: 0.8
+  posSelectionRadius: 0.25
+  minFallTime: 0.5
+  maxFallTime: 0.8
+  visuals: {fileID: 0}
 --- !u!1 &1695408466
 GameObject:
   m_ObjectHideFlags: 0
