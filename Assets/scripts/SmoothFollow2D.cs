@@ -43,7 +43,7 @@ public class SmoothFollow2D : MonoBehaviour
 
 	private void DoThing()
 	{
-		transform.position = new Vector3(
+		transform.position = offset + new Vector3(
 			Mathf.Lerp(transform.position.x, target.transform.position.x, 1 - Mathf.Pow((1 - targetLerpVal), Time.deltaTime)),
 			Mathf.Lerp(transform.position.y, target.transform.position.y, 1 - Mathf.Pow((1 - targetLerpVal), Time.deltaTime)),
 			transform.position.z
@@ -52,7 +52,7 @@ public class SmoothFollow2D : MonoBehaviour
 
 	private void DoApproximateThing()
 	{
-		transform.position = new Vector3(
+		transform.position = offset + new Vector3(
 			Mathf.Lerp(transform.position.x, target.transform.position.x, targetLerpVal * Time.deltaTime),
 			Mathf.Lerp(transform.position.y, target.transform.position.y, targetLerpVal * Time.deltaTime),
 			transform.position.z

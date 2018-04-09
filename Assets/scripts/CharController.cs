@@ -37,14 +37,16 @@ public class CharController : MonoBehaviour
 	[SerializeField]
 	private float speed;
 	
+	// animation stuff
 	public Animator ani;
+	private float minRunSpeed = 0.4f;
 
 	void Start ()
 	{
 		rigid = GetComponent<Rigidbody2D>();
 		input = GetComponent<CharInput>();
 		cameraFollowPoint.localPosition = defaultCameraOffset;
-		ani.run = true;
+		ani.SetBool("run", true);
 	}
 	
 	void Update ()
@@ -57,6 +59,15 @@ public class CharController : MonoBehaviour
 
 		velocity = rigid.velocity;
 		speed = rigid.velocity.magnitude;
+
+		if (Mathf.Abs(velocity.x) > minRunSpeed)
+		{
+			ani.SetBool("run", true);
+		}
+		else
+		{
+			ani.SetBool("run", false);
+		}
 	}
 
 	private void FixedUpdate()

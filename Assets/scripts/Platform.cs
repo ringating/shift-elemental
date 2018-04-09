@@ -20,7 +20,7 @@ public class Platform : MonoBehaviour
 	{
 		if (!forceDisable)
 		{
-			if (transform.position.y < (ch.transform.position.y - ch.GetComponent<CapsuleCollider2D>().size.y / 2) + leniency)
+			if (transform.position.y < (ch.transform.position.y - ch.GetComponent<BoxCollider2D>().size.y / 2) + leniency)
 			{
 
 				// player is above platform, enable collision between Player1 and Platform layers
