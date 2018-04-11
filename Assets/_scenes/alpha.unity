@@ -545,6 +545,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 268839221}
+  - component: {fileID: 268839222}
   m_Layer: 0
   m_Name: Butterfly Visuals
   m_TagString: Untagged
@@ -568,6 +569,21 @@ Transform:
   m_Father: {fileID: 700580291}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &268839222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 268839220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cabb63c22b710e94b8751338fcd4d8a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cs: {fileID: 1204231255}
+  b1: {fileID: 1640352926}
+  b2: {fileID: 376164945}
+  b3: {fileID: 2125738551}
 --- !u!1 &288408277
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1019,7 @@ MonoBehaviour:
   posSelectionRadius: 0.6
   minFallTime: 0.8
   maxFallTime: 1.2
-  visuals: {fileID: 0}
+  visuals: {fileID: 749855626}
 --- !u!4 &376164946
 Transform:
   m_ObjectHideFlags: 0
@@ -3391,7 +3407,7 @@ MonoBehaviour:
   posSelectionRadius: 0.6
   minFallTime: 0.8
   maxFallTime: 1.2
-  visuals: {fileID: 0}
+  visuals: {fileID: 673900718}
 --- !u!1 &1695408466
 GameObject:
   m_ObjectHideFlags: 0
@@ -55551,7 +55567,7 @@ MonoBehaviour:
   posSelectionRadius: 0.6
   minFallTime: 0.8
   maxFallTime: 1.2
-  visuals: {fileID: 0}
+  visuals: {fileID: 300035689}
 --- !u!4 &2125738552
 Transform:
   m_ObjectHideFlags: 0
