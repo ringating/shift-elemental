@@ -710,8 +710,8 @@ MonoBehaviour:
   upCutoff: 1
   downCutoff: 0.6
   horiFlipDeadZone: 0.1
-  movingUp: {fileID: 21300000, guid: 6c2b89b3abf614b42abdb91cd0517a4a, type: 3}
-  movingDown: {fileID: 21300000, guid: dccfea0227574e54e950fc8b41463f29, type: 3}
+  movingUp: {fileID: 21300000, guid: 915fb364a1fef574390897b1dfb06243, type: 3}
+  movingDown: {fileID: 21300000, guid: 87b306c8e4ccf2e4fa54e3b6486e9d4b, type: 3}
   tween: {fileID: 21300000, guid: 5e250e3905db73649a54f9953d90a0a4, type: 3}
 --- !u!212 &300035689
 SpriteRenderer:
@@ -1520,8 +1520,8 @@ MonoBehaviour:
   upCutoff: 1
   downCutoff: 0.6
   horiFlipDeadZone: 0.1
-  movingUp: {fileID: 21300000, guid: 6c2b89b3abf614b42abdb91cd0517a4a, type: 3}
-  movingDown: {fileID: 21300000, guid: dccfea0227574e54e950fc8b41463f29, type: 3}
+  movingUp: {fileID: 21300000, guid: 915fb364a1fef574390897b1dfb06243, type: 3}
+  movingDown: {fileID: 21300000, guid: 87b306c8e4ccf2e4fa54e3b6486e9d4b, type: 3}
   tween: {fileID: 21300000, guid: 5e250e3905db73649a54f9953d90a0a4, type: 3}
 --- !u!212 &673900718
 SpriteRenderer:
@@ -1826,8 +1826,8 @@ MonoBehaviour:
   upCutoff: 1
   downCutoff: 0.6
   horiFlipDeadZone: 0.1
-  movingUp: {fileID: 21300000, guid: 6c2b89b3abf614b42abdb91cd0517a4a, type: 3}
-  movingDown: {fileID: 21300000, guid: dccfea0227574e54e950fc8b41463f29, type: 3}
+  movingUp: {fileID: 21300000, guid: 915fb364a1fef574390897b1dfb06243, type: 3}
+  movingDown: {fileID: 21300000, guid: 87b306c8e4ccf2e4fa54e3b6486e9d4b, type: 3}
   tween: {fileID: 21300000, guid: 5e250e3905db73649a54f9953d90a0a4, type: 3}
 --- !u!212 &749855626
 SpriteRenderer:
