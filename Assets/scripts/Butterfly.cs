@@ -21,9 +21,11 @@ public class Butterfly : MonoBehaviour
 
 	public SpriteRenderer visuals;
 
+	
+
 	void Start ()
 	{
-		ogPosition = new Vector2(transform.position.x, transform.position.y);
+		ogPosition = new Vector2(transform.localPosition.x, transform.localPosition.y);
 		Flap();
 	}
 	
@@ -32,7 +34,7 @@ public class Butterfly : MonoBehaviour
 		if (fallTime > 0)
 		{
 			fallTime -= Time.deltaTime;
-			transform.position = new Vector3(transform.position.x, transform.position.y - Mathf.Abs(speed)*Time.deltaTime, transform.position.z);
+			transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y - Mathf.Abs(speed)*Time.deltaTime, transform.localPosition.z);
 		}
 		else
 		{
@@ -42,11 +44,11 @@ public class Butterfly : MonoBehaviour
 
 	private void Flap ()
 	{
-		startPosition = ogPosition + Random.insideUnitCircle * posSelectionRadius;
+		startPosition = ogPosition + new Vector2(Random.insideUnitCircle.x, Random.insideUnitCircle.y/2) * posSelectionRadius;
 		speed = minFallSpeed + Random.value * (maxFallSpeed - minFallSpeed);
 		fallTime = minFallTime + Random.value * (maxFallTime - minFallTime);
 
-		transform.position = new Vector3(startPosition.x, startPosition.y, transform.position.z);
+		transform.localPosition = new Vector3(startPosition.x, startPosition.y, transform.localPosition.z);
 	}
 
 	public void Show(bool enable)
