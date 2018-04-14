@@ -21,8 +21,10 @@ public class CharState : MonoBehaviour
 
 	// default state
 	public AbsorbTrigger absorb;
+	public float healRate;
 	
 	// fire state
+	// (probably not)
 
 	// ice state
 	public GameObject iceSpear;
@@ -30,6 +32,8 @@ public class CharState : MonoBehaviour
 	public float iceSpearHopSpeed;
 
 	// grass state
+	public GameObject vineGrapple;
+	public float vineLaunchOffset;
 	
 
 	void Start ()
@@ -110,7 +114,7 @@ public class CharState : MonoBehaviour
 		// heal?
 		if (input.action2)
 		{
-			health += Time.deltaTime * 20;
+			health += Time.deltaTime * healRate;
 			if (health > maxHealth)
 			{
 				health = maxHealth;
@@ -147,12 +151,21 @@ public class CharState : MonoBehaviour
 		// aoe freeze
 		if (input.action2Down)
 		{
-
+			
 		}
 	}
 
 	private void Grass()
 	{
+		// melee
+		// tbd
+
+		// vine grapple
+		if (input.action2Down)
+		{
+			Instantiate(vineGrapple, transform.position + new Vector3(input.aim.normalized.x * vineLaunchOffset, input.aim.normalized.y * vineLaunchOffset, 0), Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, input.aim)));
+			//charge = 0;
+		}
 
 	}
 
