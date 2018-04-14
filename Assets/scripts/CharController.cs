@@ -20,7 +20,7 @@ public class CharController : MonoBehaviour
 	public Platform plat;
 	public float platDropTimeDisable = 0.2f;
 
-	private Rigidbody2D rigid;
+	public Rigidbody2D rigid;
 	private CharInput input;
 	private bool jumpReleased = false;
 	//private ContactPoint2D[] contacts = new ContactPoint2D[256];
@@ -36,6 +36,8 @@ public class CharController : MonoBehaviour
 	private Vector2 velocity;
 	[SerializeField]
 	private float speed;
+
+	public bool disable = false;
 	
 	// animation stuff
 	public Animator ani;
@@ -48,14 +50,17 @@ public class CharController : MonoBehaviour
 		cameraFollowPoint.localPosition = defaultCameraOffset;
 		ani.SetBool("run", true);
 	}
-	
-	void Update ()
+
+	void Update()
 	{
-		Jump();
-		Look();
-		Walk();
-		Drift();
-		PlatDrop();
+		if (!disable)
+		{
+			Jump();
+			Look();
+			Walk();
+			Drift();
+			PlatDrop();
+		}
 
 		velocity = rigid.velocity;
 		speed = rigid.velocity.magnitude;
@@ -72,7 +77,10 @@ public class CharController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		RelativeRigidUpdate();
+		if (!disable)
+		{
+			RelativeRigidUpdate();
+		}
 	}
 
 	/*private void OnCollisionEnter2D(Collision2D collision)
