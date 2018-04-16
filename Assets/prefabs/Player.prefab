@@ -4567,7 +4567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 3
-  charge: 1
+  charge: 3
   maxCharge: 3
   input: {fileID: 114758178370650494}
   ctrl: {fileID: 0}
