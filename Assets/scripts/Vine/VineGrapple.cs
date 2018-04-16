@@ -15,7 +15,7 @@ public class VineGrapple : MonoBehaviour
 
 	private Rigidbody2D rigid;
 
-	void Start ()
+	void Start()
 	{
 		speedVec = speed * new Vector2(Mathf.Cos(transform.rotation.eulerAngles.z * Mathf.Deg2Rad), Mathf.Sin(transform.rotation.eulerAngles.z * Mathf.Deg2Rad));
 		rigid = GetComponent<Rigidbody2D>();
@@ -40,9 +40,15 @@ public class VineGrapple : MonoBehaviour
 			cs.ctrl.rigid.velocity = (targetPoint - cs.ctrl.rigid.position).normalized * pullSpeed;
 			if (Vector2.Distance(targetPoint, cs.ctrl.rigid.position) < minGrappleLength)
 			{
-				cs.ctrl.disable = false;
-				Destroy(this.gameObject);
+				Delete();
 			}
 		}
+	}
+
+	private void Delete()
+	{
+		cs.ctrl.disable = false;
+		GetComponent<VineSections>().Delete();
+		Destroy(this.gameObject);
 	}
 }
