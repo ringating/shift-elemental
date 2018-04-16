@@ -406,6 +406,7 @@ MonoBehaviour:
   targetLerpVal: 0.9999999
   useLateUpdate: 0
   useApproximation: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &114393462606989150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -421,6 +422,7 @@ MonoBehaviour:
   targetLerpVal: 0.9995
   useLateUpdate: 1
   useApproximation: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &114518528134498176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -446,9 +448,12 @@ MonoBehaviour:
   platDropYThresh: -0.75
   plat: {fileID: 0}
   platDropTimeDisable: 0.2
+  rigid: {fileID: 0}
   grounded: 0
   velocity: {x: 0, y: 0}
   speed: 0
+  disable: 0
+  ani: {fileID: 0}
 --- !u!114 &114520332206212452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -469,9 +474,12 @@ MonoBehaviour:
   maxHealth: 100
   health: 0
   absorb: {fileID: 114947571810536976}
+  healRate: 0
   iceSpear: {fileID: 1573519707611814, guid: f0daa83c70f411b4f97446924255a681, type: 2}
   iceSpearLaunchOffset: 1
   iceSpearHopSpeed: 6
+  vineGrapple: {fileID: 0}
+  vineLaunchOffset: 0
 --- !u!114 &114894291711289030
 MonoBehaviour:
   m_ObjectHideFlags: 1
