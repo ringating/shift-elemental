@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cfe511f5ae84c24e82fbf88db7e24ae, type: 3}
+  m_Name: FerrTerGrass
+  m_EditorClassIdentifier: 
+  _fillMaterial: {fileID: 2100000, guid: 828a1ef7f7ea66b4eb01d140fd7f5fbf, type: 2}
+  _edgeMaterial: {fileID: 2100000, guid: f2e18ea123ea3c940bb12fa6928d3517, type: 2}
+  _descriptors:
+  - applyTo: 0
+    zOffset: 0
+    yOffset: 0
+    leftCap:
+      serializedVersion: 2
+      x: 0.03018868
+      y: 0
+      width: 0.06113189
+      height: 0.66014296
+    innerLeftCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    rightCap:
+      serializedVersion: 2
+      x: 0.86501366
+      y: 0
+      width: 0.097250514
+      height: 0.6597221
+    innerRightCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    body:
+    - serializedVersion: 2
+      x: 0.091320574
+      y: 0
+      width: 0.13617264
+      height: 0.66014296
+    - serializedVersion: 2
+      x: 0.22749332
+      y: 0
+      width: 0.1588139
+      height: 0.66014296
+    - serializedVersion: 2
+      x: 0.3863074
+      y: 0
+      width: 0.12787059
+      height: 0.66014296
+    - serializedVersion: 2
+      x: 0.514178
+      y: 0
+      width: 0.16787063
+      height: 0.66014296
+    - serializedVersion: 2
+      x: 0.6820483
+      y: 0
+      width: 0.18296503
+      height: 0.66014296
+    capOffset: 0
+  - applyTo: 1
+    zOffset: 0.1
+    yOffset: 0.15
+    leftCap:
+      serializedVersion: 2
+      x: 0.078490555
+      y: 0.75231487
+      width: 0
+      height: 0
+    innerLeftCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    rightCap:
+      serializedVersion: 2
+      x: 0.26792216
+      y: 0.75231487
+      width: 0
+      height: 0
+    innerRightCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    body:
+    - serializedVersion: 2
+      x: 0.078490555
+      y: 0.71759266
+      width: 0.09471582
+      height: 0.15972215
+    - serializedVersion: 2
+      x: 0.17320636
+      y: 0.6921297
+      width: 0.081130914
+      height: 0.18518512
+    capOffset: 0
+  - applyTo: 2
+    zOffset: 0.1
+    yOffset: 0
+    leftCap:
+      serializedVersion: 2
+      x: 0.45056602
+      y: 0.70138884
+      width: 0
+      height: 0
+    innerLeftCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    rightCap:
+      serializedVersion: 2
+      x: 0.67396224
+      y: 0.70138884
+      width: 0
+      height: 0
+    innerRightCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    body:
+    - serializedVersion: 2
+      x: 0.45056602
+      y: 0.71759254
+      width: 0.11169811
+      height: 0.13657415
+    - serializedVersion: 2
+      x: 0.56226414
+      y: 0.70138884
+      width: 0.11169811
+      height: 0.15277785
+    capOffset: 0
+  - applyTo: 0
+    zOffset: 0
+    yOffset: 0
+    leftCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    innerLeftCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    rightCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    innerRightCap:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    body:
+    - serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.03773585
+      height: 0.1650165
+    capOffset: 0
+  isPixel: 0
