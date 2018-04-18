@@ -71,6 +71,9 @@ public class CharController : MonoBehaviour
 
 		if (grounded)
 		{
+			ani.SetBool("rising", false);
+			ani.SetBool("falling", false);
+
 			if (Mathf.Abs(velocity.x) > minRunSpeed)
 			{
 				ani.SetBool("run", true);
@@ -86,6 +89,8 @@ public class CharController : MonoBehaviour
 		}
 		else
 		{
+			ani.SetBool("run", false);
+
 			if (velocity.y > 0)
 			{
 				ani.SetBool("rising", true);
