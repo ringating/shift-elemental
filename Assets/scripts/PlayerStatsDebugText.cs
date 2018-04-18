@@ -17,6 +17,6 @@ public class PlayerStatsDebugText : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		textObj.text = player.health.ToString() /*+ System.Environment.NewLine + player.charge.ToString()*/;
+		textObj.text = ((int)player.health).ToString() /*+ System.Environment.NewLine + player.charge.ToString()*/;
 	}
 }
