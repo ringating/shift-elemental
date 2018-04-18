@@ -17,7 +17,7 @@ public class AbsorbTrigger : MonoBehaviour
 	private bool inputReleased = false;
 	private bool absorbAvailable = false;
 
-	private MeshRenderer tempVisual;
+	public SpriteRenderer visuals;
 
 	// Use this for initialization
 	private void Start ()
@@ -25,7 +25,6 @@ public class AbsorbTrigger : MonoBehaviour
 		trigger = GetComponent<CircleCollider2D>();
 		//trigger.enabled = false;
 
-		tempVisual = GetComponent<MeshRenderer>();
 		DisableAbsorb();
 	}
 	
@@ -67,7 +66,7 @@ public class AbsorbTrigger : MonoBehaviour
 	{
 		//Debug.Log("EnableAbsorb()");
 		trigger.enabled = true;
-		tempVisual.enabled = true;
+		visuals.enabled = true;
 
 		playerState.ctrl.Stop();
 	}
@@ -76,7 +75,7 @@ public class AbsorbTrigger : MonoBehaviour
 	{
 		//Debug.Log("DisableAbsorb()");
 		trigger.enabled = false;
-		tempVisual.enabled = false;
+		visuals.enabled = false;
 	}
 
 	private void UpdateTimer()
