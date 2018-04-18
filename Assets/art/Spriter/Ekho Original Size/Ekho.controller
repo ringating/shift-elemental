@@ -119,7 +119,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74305002687278992, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74537436498314668, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74537436498314668, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -148,7 +152,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74541170182937270, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74240222687219074, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74240222687219074, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -203,7 +211,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74844622401311810, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74844622401311810, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74844622401311810, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -233,7 +245,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74831981640904582, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74831981640904582, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74831981640904582, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -313,7 +329,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74500651977600082, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74500651977600082, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74500651977600082, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -367,7 +387,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74831244588372506, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74831244588372506, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74831244588372506, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -596,7 +620,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74183204787611308, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74310588423446786, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74310588423446786, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -675,7 +703,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74986449455984310, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74986449455984310, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74986449455984310, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"
@@ -704,7 +736,11 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Motion: {fileID: 74223407345694858, guid: 2f881cea202940d4383034a4b7afee2a, type: 2}
+=======
+  m_Motion: {fileID: 74223407345694858, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_Motion: {fileID: 74223407345694858, guid: 4e3490cb997d4bc419c09c3d2376638b, type: 2}
 >>>>>>> parent of 1137fe3... Revert "big swap"

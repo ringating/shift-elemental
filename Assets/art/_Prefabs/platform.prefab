@@ -77,7 +77,11 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1414363029
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+  m_SortingLayer: 6
+>>>>>>> parent of 1137fe3... Revert "big swap"
 =======
   m_SortingLayer: 6
 >>>>>>> parent of 1137fe3... Revert "big swap"
