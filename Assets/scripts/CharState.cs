@@ -56,7 +56,7 @@ public class CharState : MonoBehaviour
 			state = 0;
 		}
 
-		if (charge <= 0)
+		if (charge <= 0 && state != 0)
 		{
 			state = 0;
 		}
