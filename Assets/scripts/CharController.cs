@@ -43,6 +43,10 @@ public class CharController : MonoBehaviour
 	public Animator ani;
 	private float minRunSpeed = 0.4f;
 
+	// audio stuff
+	public AudioSource footstep;
+	public AudioSource jump;
+
 	void Start ()
 	{
 		rigid = GetComponent<Rigidbody2D>();
@@ -65,13 +69,33 @@ public class CharController : MonoBehaviour
 		velocity = rigid.velocity;
 		speed = rigid.velocity.magnitude;
 
-		if (Mathf.Abs(velocity.x) > minRunSpeed)
+		if (grounded)
 		{
-			ani.SetBool("run", true);
+			if (Mathf.Abs(velocity.x) > minRunSpeed)
+			{
+				ani.SetBool("run", true);
+				if (!footstep.isPlaying)
+				{
+					footstep.Play();
+				}
+			}
+			else
+			{
+				ani.SetBool("run", false);
+			}
 		}
 		else
 		{
-			ani.SetBool("run", false);
+			if (velocity.y > 0)
+			{
+				ani.SetBool("rising", true);
+				ani.SetBool("falling", false);
+			}
+			else
+			{
+				ani.SetBool("rising", false);
+				ani.SetBool("falling", true);
+			}
 		}
 	}
 
@@ -178,6 +202,7 @@ public class CharController : MonoBehaviour
 			{
 				rigid.velocity = new Vector2(rigid.velocity.x, jumpSpeed);
 				jumpReleased = false;
+				jump.Play();
 			}
 		}
 		else

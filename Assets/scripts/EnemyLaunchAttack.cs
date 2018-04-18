@@ -15,6 +15,8 @@ public class EnemyLaunchAttack : MonoBehaviour
 	private RaycastHit2D rh;
 	private float timer = 0;
 
+	public AudioSource attackSound;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -67,6 +69,8 @@ public class EnemyLaunchAttack : MonoBehaviour
 
 	private void LaunchAttack()
 	{
+		attackSound.Play();
+
 		GameObject gObj = Instantiate(attack, transform.position, Quaternion.identity);
 
 		HomingProjectile hProj = gObj.GetComponent<HomingProjectile>();

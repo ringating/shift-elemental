@@ -34,6 +34,10 @@ public class CharState : MonoBehaviour
 	// grass state
 	public GameObject vineGrapple;
 	public float vineLaunchOffset;
+
+	// audio
+	public AudioSource throwing;
+	public AudioSource hurt;
 	
 
 	void Start ()
@@ -146,6 +150,9 @@ public class CharState : MonoBehaviour
 
 			// decrement charge
 			charge--;
+
+			// sound
+			throwing.Play();
 		}
 
 		// aoe freeze
@@ -177,6 +184,7 @@ public class CharState : MonoBehaviour
 	public void Damaged(float damage)
 	{
 		health -= damage;
+		hurt.Play();
 	}
 
 	public void Damaged(int damage)
