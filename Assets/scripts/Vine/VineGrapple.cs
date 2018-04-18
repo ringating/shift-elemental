@@ -10,6 +10,7 @@ public class VineGrapple : MonoBehaviour
 	public float maxGrappleLength;
 	private Vector2 speedVec;
 	public CharState cs;
+	private float failSafeTimer = 7;
 
 	private Vector2 targetPoint;
 	private ContactPoint2D[] asdf;
@@ -54,6 +55,13 @@ public class VineGrapple : MonoBehaviour
 				cs.charge = 1;
 				Delete();
 			}
+		}
+
+		failSafeTimer -= Time.fixedDeltaTime;
+
+		if (failSafeTimer <= 0)
+		{
+			Delete();
 		}
 	}
 

@@ -17,6 +17,19 @@ public class PlayerStatsDebugText : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		textObj.text = ((int)player.health).ToString() /*+ System.Environment.NewLine + player.charge.ToString()*/;
+		textObj.text = ((int)player.health).ToString() + System.Environment.NewLine;
+
+		if (player.state == 0)
+		{
+			textObj.text += "Neutral";
+		}
+		else if (player.state == 2)
+		{
+			textObj.text += "Ice";
+		}
+		else if (player.state == 3)
+		{
+			textObj.text += "Grass";
+		}
 	}
 }
