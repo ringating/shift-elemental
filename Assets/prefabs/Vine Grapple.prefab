@@ -178,6 +178,7 @@ MonoBehaviour:
   speed: 10
   pullSpeed: 10
   minGrappleLength: 1
+  maxGrappleLength: 10
   cs: {fileID: 0}
 --- !u!212 &212057618376983224
 SpriteRenderer:

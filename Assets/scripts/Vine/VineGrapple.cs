@@ -7,6 +7,7 @@ public class VineGrapple : MonoBehaviour
 	public float speed;
 	public float pullSpeed;
 	public float minGrappleLength;
+	public float maxGrappleLength;
 	private Vector2 speedVec;
 	public CharState cs;
 
@@ -37,8 +38,17 @@ public class VineGrapple : MonoBehaviour
 	{
 		if (targetPoint != null && cs.ctrl.disable)
 		{
+			// has hooked
 			cs.ctrl.rigid.velocity = (targetPoint - cs.ctrl.rigid.position).normalized * pullSpeed;
 			if (Vector2.Distance(targetPoint, cs.ctrl.rigid.position) < minGrappleLength)
+			{
+				Delete();
+			}
+		}
+		else
+		{
+			// hasn't hooked
+			if (Vector2.Distance(rigid.position, cs.ctrl.rigid.position) > maxGrappleLength)
 			{
 				Delete();
 			}
