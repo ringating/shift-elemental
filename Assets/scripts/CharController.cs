@@ -43,6 +43,9 @@ public class CharController : MonoBehaviour
 	public Animator ani;
 	private float minRunSpeed = 0.4f;
 
+	//public Animator aniGrass;
+	//public Animator aniIce;
+
 	// audio stuff
 	public AudioSource footstep;
 	public AudioSource jump;
