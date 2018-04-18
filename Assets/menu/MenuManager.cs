@@ -7,17 +7,17 @@ public class MenuManager : MonoBehaviour
 {
 	public void ToGame()
 	{
-		SceneManager.LoadScene ("ice demo");
+		SceneManager.LoadScene("beta");
 	}
 
 	public void ToAbout()
 	{
-		SceneManager.LoadScene ("about");
+		SceneManager.LoadScene("about");
 	}
 
 	public void Quit()
 	{
-		Application.Quit ();
+		Application.Quit();
 	}
 
 

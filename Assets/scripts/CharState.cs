@@ -31,9 +31,13 @@ public class CharState : MonoBehaviour
 	public float iceSpearLaunchOffset;
 	public float iceSpearHopSpeed;
 
+	public GameObject iceBlock;
+
 	// grass state
 	public GameObject vineGrapple;
 	public float vineLaunchOffset;
+
+	public GameObject betaGrassSpear;
 
 	// audio
 	public AudioSource throwing;
@@ -155,23 +159,52 @@ public class CharState : MonoBehaviour
 			throwing.Play();
 		}
 
-		// aoe freeze
+		// aoe freeze (just spawn an ice block for beta)
 		if (input.action2Down)
 		{
-			
+			if (facingRight)
+			{
+				Instantiate(iceBlock, transform.position + new Vector3(iceSpearLaunchOffset, 0, 0), Quaternion.identity);
+			}
+			else
+			{
+				Instantiate(iceBlock, transform.position + new Vector3(-iceSpearLaunchOffset, 0, 0), Quaternion.identity);
+			}
+
+			throwing.Play();
+			charge = 0;
 		}
 	}
 
 	private void Grass()
 	{
-		// melee
-		// tbd
+		// grass attack (spear for now)
+		if (input.action1Down)
+		{
+			if (facingRight)
+			{
+				Instantiate(betaGrassSpear, transform.position + new Vector3(iceSpearLaunchOffset, 0, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = true;
+			}
+			else
+			{
+				Instantiate(betaGrassSpear, transform.position + new Vector3(-iceSpearLaunchOffset, 0, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = false;
+			}
+
+			// also jump a tiny bit
+			ctrl.IceJump(iceSpearHopSpeed);
+
+			// decrement charge
+			charge--;
+
+			// sound
+			throwing.Play();
+		}
 
 		// vine grapple
 		if (input.action2Down && input.aim != Vector2.zero)
 		{
 			Instantiate(vineGrapple, transform.position + new Vector3(input.aim.normalized.x * vineLaunchOffset, input.aim.normalized.y * vineLaunchOffset, 0), Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, input.aim))).GetComponent<VineGrapple>().cs = this;
-			//charge = 0;
+			charge = 0;
 		}
 
 	}
