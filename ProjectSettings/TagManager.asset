@@ -51,11 +51,11 @@ TagManager:
   - name: BG1
     uniqueID: 2716742171
     locked: 0
-  - name: Mid Detail
-    uniqueID: 531129979
-    locked: 0
   - name: Second Ground
     uniqueID: 3174325373
+    locked: 0
+  - name: BG Particles
+    uniqueID: 531129979
     locked: 0
   - name: Main Detail
     uniqueID: 588064147
@@ -71,6 +71,12 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3597611501
+    locked: 0
+  - name: Enemy
+    uniqueID: 3512752773
+    locked: 0
+  - name: Player Particles
+    uniqueID: 3013621551
     locked: 0
   - name: FG
     uniqueID: 734928747

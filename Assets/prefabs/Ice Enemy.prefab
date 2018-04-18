@@ -341,3 +341,5 @@ MonoBehaviour:
   leftMoveLimit: {fileID: 4895219892317420}
   horizontalVelocity: 1
   startMovingRight: 0
+  rightLimit: 0
+  leftLimit: 0
