@@ -75,7 +75,11 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 827206665
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+  m_SortingLayer: 7
+>>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
 --- !u!33 &33665777707600062
 MeshFilter:

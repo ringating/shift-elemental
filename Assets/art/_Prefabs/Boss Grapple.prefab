@@ -199,7 +199,11 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 531129979
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+  m_SortingLayer: 3
+>>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
 --- !u!23 &23294062795524402
 MeshRenderer:
@@ -233,7 +237,11 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1578225125
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+  m_SortingLayer: 2
+>>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
 --- !u!23 &23324332260248256
 MeshRenderer:
@@ -267,7 +275,11 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1414363029
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+  m_SortingLayer: 6
+>>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
 --- !u!33 &33138864505347174
 MeshFilter:
