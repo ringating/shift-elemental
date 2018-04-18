@@ -149,7 +149,11 @@ public class CharController : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		grounded = true;
+		if (collision.tag != "EnemyAttack")
+		{
+			grounded = true;
+		}
+
 		relativeRigid = collision.attachedRigidbody;
 		//plat = collision.GetComponent<Platform>();
 		if (/*plat == null &&*/ collision.GetComponent<TogglePlat>() != null)
@@ -173,7 +177,10 @@ public class CharController : MonoBehaviour
 
 	private void OnTriggerStay2D(Collider2D collision)
 	{
-		grounded = true;
+		if (collision.tag != "EnemyAttack")
+		{
+			grounded = true;
+		}
 	}
 
 	/*

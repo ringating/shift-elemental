@@ -122,7 +122,12 @@ public class CharState : MonoBehaviour
 		// heal?
 		if (input.action2)
 		{
-			health += Time.deltaTime * healRate;
+			if (health < maxHealth)
+			{
+				health += Time.deltaTime * healRate;
+				ctrl.Stop();
+			}
+
 			if (health > maxHealth)
 			{
 				health = maxHealth;
