@@ -168,7 +168,7 @@ public class CharState : MonoBehaviour
 		// tbd
 
 		// vine grapple
-		if (input.action2Down)
+		if (input.action2Down && input.aim != Vector2.zero)
 		{
 			Instantiate(vineGrapple, transform.position + new Vector3(input.aim.normalized.x * vineLaunchOffset, input.aim.normalized.y * vineLaunchOffset, 0), Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, input.aim))).GetComponent<VineGrapple>().cs = this;
 			//charge = 0;
