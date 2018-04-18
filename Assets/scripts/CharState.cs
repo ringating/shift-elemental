@@ -45,6 +45,12 @@ public class CharState : MonoBehaviour
 	
 	void Update ()
 	{
+		if (ctrl.ani.GetBool("damaged"))
+		{
+			ctrl.ani.SetBool("damaged", false);
+		}
+
+
 		if (health < 0)
 		{
 			Die();
@@ -177,6 +183,7 @@ public class CharState : MonoBehaviour
 	public void Damaged(float damage)
 	{
 		health -= damage;
+		ctrl.ani.SetBool("damaged", true);
 	}
 
 	public void Damaged(int damage)

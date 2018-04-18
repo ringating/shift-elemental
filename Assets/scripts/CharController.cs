@@ -73,6 +73,25 @@ public class CharController : MonoBehaviour
 		{
 			ani.SetBool("run", false);
 		}
+
+		if (!grounded)
+		{
+			if (velocity.y > 0)
+			{
+				ani.SetBool("rising", true);
+				ani.SetBool("falling", false);
+			}
+			else
+			{
+				ani.SetBool("falling", true);
+				ani.SetBool("rising", false);
+			}
+		}
+		else
+		{
+			ani.SetBool("falling", false);
+			ani.SetBool("rising", false);
+		}
 	}
 
 	private void FixedUpdate()

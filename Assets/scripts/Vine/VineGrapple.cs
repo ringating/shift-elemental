@@ -50,6 +50,8 @@ public class VineGrapple : MonoBehaviour
 			// hasn't hooked
 			if (Vector2.Distance(rigid.position, cs.ctrl.rigid.position) > maxGrappleLength)
 			{
+				cs.state = 3;
+				cs.charge = 1;
 				Delete();
 			}
 		}
