@@ -20,15 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4562579254027184}
   - component: {fileID: 212028910377472002}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114609350088807664}
-=======
-  - component: {fileID: 114761961952465670}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114761961952465670}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114671772529841560}
   m_Layer: 0
   m_Name: IceForm_Hands3b
   m_TagString: Untagged
@@ -77,15 +69,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4790661968604560}
   - component: {fileID: 212675034072728088}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114238529319613772}
-=======
-  - component: {fileID: 114233843234473272}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114233843234473272}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114354834658107706}
   m_Layer: 0
   m_Name: IceForm_Head
   m_TagString: Untagged
@@ -134,15 +118,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4606992550096140}
   - component: {fileID: 212380335184855918}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114740063456675872}
-=======
-  - component: {fileID: 114783946924620920}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114783946924620920}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114054590932310160}
   m_Layer: 0
   m_Name: IceForm_Hands1b
   m_TagString: Untagged
@@ -189,15 +165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4233370213506516}
   - component: {fileID: 212265767408191852}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114174150552461124}
-=======
-  - component: {fileID: 114608158434464238}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114608158434464238}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114930057862117818}
   m_Layer: 0
   m_Name: IceForm_body
   m_TagString: Untagged
@@ -294,15 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4783731524059152}
   - component: {fileID: 212017656691472602}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114922000306271040}
-=======
-  - component: {fileID: 114395310102915704}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114395310102915704}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114496772638155576}
   m_Layer: 0
   m_Name: IceForm_Hands2b
   m_TagString: Untagged
@@ -476,15 +436,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4827691793669496}
   - component: {fileID: 212869059447370046}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114854115683873588}
-=======
-  - component: {fileID: 114827346233916826}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114827346233916826}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114490778771686914}
   m_Layer: 0
   m_Name: IceForm_Hands2a
   m_TagString: Untagged
@@ -563,15 +515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4336108803073958}
   - component: {fileID: 212503418446455728}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114551967095876502}
-=======
-  - component: {fileID: 114990554717108280}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114990554717108280}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114439821799206856}
   m_Layer: 0
   m_Name: IceForm_Hands1a
   m_TagString: Untagged
@@ -777,15 +721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4738620730603758}
   - component: {fileID: 212788305104892852}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - component: {fileID: 114039601270265950}
-=======
-  - component: {fileID: 114426868679835114}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - component: {fileID: 114426868679835114}
->>>>>>> parent of 1137fe3... Revert "big swap"
+  - component: {fileID: 114557130961133262}
   m_Layer: 0
   m_Name: IceForm_Hands3a
   m_TagString: Untagged
@@ -5906,209 +5842,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &114039601270265950
-=======
---- !u!114 &114233843234473272
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
---- !u!114 &114233843234473272
->>>>>>> parent of 1137fe3... Revert "big swap"
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1911269259877706}
-=======
-  m_GameObject: {fileID: 1128778381881252}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_GameObject: {fileID: 1128778381881252}
->>>>>>> parent of 1137fe3... Revert "big swap"
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 21300000, guid: 50f8c6d08f482e94c85e7e6540e3725a, type: 3}
-  - {fileID: 21300000, guid: bbc6db561358daf47afa7c0eb7de7a23, type: 3}
---- !u!114 &114174150552461124
-=======
-  - {fileID: 21300000, guid: 18a0a34a141fb014cba80176e2784691, type: 3}
-  - {fileID: 21300000, guid: a5c4974c88735c948896299cbf1ea224, type: 3}
---- !u!114 &114238875858071916
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - {fileID: 21300000, guid: 18a0a34a141fb014cba80176e2784691, type: 3}
-  - {fileID: 21300000, guid: a5c4974c88735c948896299cbf1ea224, type: 3}
---- !u!114 &114238875858071916
->>>>>>> parent of 1137fe3... Revert "big swap"
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1275652651920822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-  - {fileID: 21300000, guid: 9789ee21e29805241949cd3320269763, type: 3}
-  - {fileID: 21300000, guid: 97c91fe7b1359604fbe32587195281a6, type: 3}
---- !u!114 &114238529319613772
-=======
-=======
->>>>>>> parent of 1137fe3... Revert "big swap"
-  m_GameObject: {fileID: 1964876856491076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e9dda14b6f34517a0d598d3320a902, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrder: 0
-  applySpriterZOrder: 0
---- !u!114 &114395310102915704
-<<<<<<< HEAD
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
->>>>>>> parent of 1137fe3... Revert "big swap"
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1128778381881252}
-=======
-  m_GameObject: {fileID: 1383768467362506}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_GameObject: {fileID: 1383768467362506}
->>>>>>> parent of 1137fe3... Revert "big swap"
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 21300000, guid: 18a0a34a141fb014cba80176e2784691, type: 3}
-  - {fileID: 21300000, guid: a5c4974c88735c948896299cbf1ea224, type: 3}
---- !u!114 &114238875858071916
-=======
-  - {fileID: 21300000, guid: 2c77a3feea3fde748bcd7c3ff5db2247, type: 3}
-  - {fileID: 21300000, guid: f8909013c89bcd34986ef11b04fc290a, type: 3}
---- !u!114 &114426868679835114
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - {fileID: 21300000, guid: 2c77a3feea3fde748bcd7c3ff5db2247, type: 3}
-  - {fileID: 21300000, guid: f8909013c89bcd34986ef11b04fc290a, type: 3}
---- !u!114 &114426868679835114
->>>>>>> parent of 1137fe3... Revert "big swap"
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1964876856491076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e9dda14b6f34517a0d598d3320a902, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrder: 0
-  applySpriterZOrder: 0
---- !u!114 &114551967095876502
-=======
-=======
->>>>>>> parent of 1137fe3... Revert "big swap"
-  m_GameObject: {fileID: 1911269259877706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-  - {fileID: 21300000, guid: 50f8c6d08f482e94c85e7e6540e3725a, type: 3}
-  - {fileID: 21300000, guid: bbc6db561358daf47afa7c0eb7de7a23, type: 3}
---- !u!114 &114608158434464238
-<<<<<<< HEAD
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
->>>>>>> parent of 1137fe3... Revert "big swap"
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_GameObject: {fileID: 1639904805003916}
-=======
-  m_GameObject: {fileID: 1275652651920822}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_GameObject: {fileID: 1275652651920822}
->>>>>>> parent of 1137fe3... Revert "big swap"
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-<<<<<<< HEAD
-<<<<<<< HEAD
-  - {fileID: 21300000, guid: 885aa7d4501a8c24b9093b431c52cb98, type: 3}
-  - {fileID: 21300000, guid: 7cfb93b19b7f8104dadcf35708d20930, type: 3}
---- !u!114 &114609350088807664
-=======
-  - {fileID: 21300000, guid: 9789ee21e29805241949cd3320269763, type: 3}
-  - {fileID: 21300000, guid: 97c91fe7b1359604fbe32587195281a6, type: 3}
---- !u!114 &114761961952465670
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - {fileID: 21300000, guid: 9789ee21e29805241949cd3320269763, type: 3}
-  - {fileID: 21300000, guid: 97c91fe7b1359604fbe32587195281a6, type: 3}
---- !u!114 &114761961952465670
->>>>>>> parent of 1137fe3... Revert "big swap"
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1003596647996854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-  - {fileID: 21300000, guid: fe2c650627a852f489d5080b0d17a122, type: 3}
-  - {fileID: 21300000, guid: 02c085c4027d7e74f82449362ec19764, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &114740063456675872
-=======
---- !u!114 &114783946924620920
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
---- !u!114 &114783946924620920
->>>>>>> parent of 1137fe3... Revert "big swap"
+--- !u!114 &114054590932310160
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -6123,15 +5857,50 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: abcec09823f8eb14491b4d2b2f1416b2, type: 3}
   - {fileID: 21300000, guid: 67ab097061d17fc43a274485880ecf30, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &114854115683873588
-=======
---- !u!114 &114827346233916826
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
---- !u!114 &114827346233916826
->>>>>>> parent of 1137fe3... Revert "big swap"
+--- !u!114 &114238875858071916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1964876856491076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e9dda14b6f34517a0d598d3320a902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrder: 0
+  applySpriterZOrder: 0
+--- !u!114 &114354834658107706
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128778381881252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: 18a0a34a141fb014cba80176e2784691, type: 3}
+  - {fileID: 21300000, guid: a5c4974c88735c948896299cbf1ea224, type: 3}
+--- !u!114 &114439821799206856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1639904805003916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: 885aa7d4501a8c24b9093b431c52cb98, type: 3}
+  - {fileID: 21300000, guid: 7cfb93b19b7f8104dadcf35708d20930, type: 3}
+--- !u!114 &114490778771686914
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -6146,28 +5915,12 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: 17f7639090fd0124bac0ed51f75da6ef, type: 3}
   - {fileID: 21300000, guid: ba1606f04eae4e74a9701a6154e20166, type: 3}
-<<<<<<< HEAD
-<<<<<<< HEAD
---- !u!114 &114922000306271040
-=======
---- !u!114 &114990554717108280
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
---- !u!114 &114990554717108280
->>>>>>> parent of 1137fe3... Revert "big swap"
+--- !u!114 &114496772638155576
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-<<<<<<< HEAD
-<<<<<<< HEAD
   m_GameObject: {fileID: 1383768467362506}
-=======
-  m_GameObject: {fileID: 1639904805003916}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_GameObject: {fileID: 1639904805003916}
->>>>>>> parent of 1137fe3... Revert "big swap"
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
@@ -6175,18 +5928,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayedSprite: 0
   Sprites:
-<<<<<<< HEAD
-<<<<<<< HEAD
   - {fileID: 21300000, guid: 2c77a3feea3fde748bcd7c3ff5db2247, type: 3}
   - {fileID: 21300000, guid: f8909013c89bcd34986ef11b04fc290a, type: 3}
-=======
-  - {fileID: 21300000, guid: 885aa7d4501a8c24b9093b431c52cb98, type: 3}
-  - {fileID: 21300000, guid: 7cfb93b19b7f8104dadcf35708d20930, type: 3}
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  - {fileID: 21300000, guid: 885aa7d4501a8c24b9093b431c52cb98, type: 3}
-  - {fileID: 21300000, guid: 7cfb93b19b7f8104dadcf35708d20930, type: 3}
->>>>>>> parent of 1137fe3... Revert "big swap"
+--- !u!114 &114557130961133262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1911269259877706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: 50f8c6d08f482e94c85e7e6540e3725a, type: 3}
+  - {fileID: 21300000, guid: bbc6db561358daf47afa7c0eb7de7a23, type: 3}
+--- !u!114 &114671772529841560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003596647996854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: fe2c650627a852f489d5080b0d17a122, type: 3}
+  - {fileID: 21300000, guid: 02c085c4027d7e74f82449362ec19764, type: 3}
+--- !u!114 &114930057862117818
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275652651920822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: 9789ee21e29805241949cd3320269763, type: 3}
+  - {fileID: 21300000, guid: 97c91fe7b1359604fbe32587195281a6, type: 3}
 --- !u!212 &212000299028249610
 SpriteRenderer:
   m_ObjectHideFlags: 1

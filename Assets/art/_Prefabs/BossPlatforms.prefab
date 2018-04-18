@@ -165,15 +165,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1414363029
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_SortingLayer: 0
-=======
   m_SortingLayer: 6
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_SortingLayer: 6
->>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
 --- !u!33 &33330942990750126
 MeshFilter:
@@ -332,15 +324,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1578225125
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_SortingLayer: 0
-=======
   m_SortingLayer: 2
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_SortingLayer: 2
->>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5749df04c92881a49b1c717cd1cb3b0e, type: 3}
   m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
@@ -384,15 +368,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1578225125
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_SortingLayer: 0
-=======
   m_SortingLayer: 2
->>>>>>> parent of 1137fe3... Revert "big swap"
-=======
-  m_SortingLayer: 2
->>>>>>> parent of 1137fe3... Revert "big swap"
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5749df04c92881a49b1c717cd1cb3b0e, type: 3}
   m_Color: {r: 0.88235295, g: 0.88235295, b: 0.88235295, a: 1}
