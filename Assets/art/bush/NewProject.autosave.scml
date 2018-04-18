@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="bush_enemy_base.png" width="611" height="373" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="bush_enemy_head.png" width="461" height="207" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="bush_enemy_top.png" width="430" height="150" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="bush_enemy">
+        <obj_info name="bone_000" type="bone" w="170.121" h="10"/>
+        <obj_info name="bone_001" type="bone" w="570.618" h="2.96046"/>
+        <obj_info name="bone_002" type="bone" w="470.562" h="2.96046"/>
+        <obj_info name="bone_003" type="bone" w="433.977" h="2.96046"/>
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="3" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="5" key="0"/>
+                    <bone_ref id="3" parent="1" timeline="6" key="0"/>
+                    <object_ref id="0" parent="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="3" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" parent="2" timeline="1" key="0" z_index="2"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="bush_enemy_base">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="502.175068" y="89.021665" angle="270.270261" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="bush_enemy_head">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="294.296099" y="-51.084934" angle="137.549949" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="bush_enemy_top">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-525.801387" y="-24.522179" angle="35.661605" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-0" y="-96.774194" angle="90.71616" scale_x="0.488857" scale_y="3.377858"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="203.361125" y="0.021674" angle="359.013579" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="516.647702" y="4.248074" angle="132.720312"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="508.890496" y="-5.495671" angle="234.608656"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="NewAnimation_000" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="3" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="5" key="0"/>
+                    <bone_ref id="3" parent="1" timeline="6" key="0"/>
+                    <object_ref id="0" parent="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="3" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" parent="2" timeline="1" key="0" z_index="2"/>
+                </key>
+                <key id="1" time="500">
+                    <bone_ref id="0" timeline="3" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="5" key="1"/>
+                    <bone_ref id="3" parent="1" timeline="6" key="1"/>
+                    <object_ref id="0" parent="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="3" timeline="2" key="0" z_index="1"/>
+                    <object_ref id="2" parent="2" timeline="1" key="1" z_index="2"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="bush_enemy_base">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="502.175068" y="89.021665" angle="270.270261" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="bush_enemy_head">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="294.296099" y="-51.084934" angle="137.549949" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+                <key id="1" time="500" spin="0">
+                    <object folder="0" file="1" x="321.215753" y="-44.926507" angle="137.549949" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="bush_enemy_top">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="-510.281559" y="-23.532968" angle="35.661605" scale_x="2.045589" scale_y="0.296046"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="0" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-0" y="-96.774194" angle="90.71616" scale_x="0.488857" scale_y="3.377858"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="203.361125" y="0.021674" angle="359.013579" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="482.134337" y="1.036295" angle="132.720312"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="510.606008" y="-3.498866" angle="116.70746"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="3" name="bone_003" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="461.892941" y="-11.904191" angle="224.026926"/>
+                </key>
+                <key id="1" time="500">
+                    <bone x="433.762692" y="-17.844372" angle="217.406236"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
