@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour 
 {
+	public GameObject main;
+	public GameObject about;
+
 	public void ToGame()
 	{
 		SceneManager.LoadScene("beta");
@@ -12,7 +15,9 @@ public class MenuManager : MonoBehaviour
 
 	public void ToAbout()
 	{
-		SceneManager.LoadScene("about");
+		//SceneManager.LoadScene("about");
+		main.SetActive(false);
+		about.SetActive(true);
 	}
 
 	public void Quit()

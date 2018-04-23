@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4000562732607952}
+  - component: {fileID: 114756515497223810}
   - component: {fileID: 212119347145276950}
   - component: {fileID: 58140033616374672}
   - component: {fileID: 50315108020193046}
@@ -105,6 +106,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   type: 3
+--- !u!114 &114756515497223810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1687192113145806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d18b14965953a42a75a2c141457075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUntilDestroy: 3
 --- !u!212 &212119347145276950
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -14,11 +14,13 @@ public class CharInput : MonoBehaviour
 	public bool action1 = false;
 	public bool action2 = false;
 	public bool cleanse = false;
+	public bool pause = false;
 
 	public bool jumpDown = false;
 	public bool action1Down = false;
 	public bool action2Down = false;
 	public bool cleanseDown = false;
+	public bool pauseDown = false;
 
 	// Update is called once per frame
 	void LateUpdate()
@@ -36,11 +38,13 @@ public class CharInput : MonoBehaviour
 		action1 = false;
 		action2 = false;
 		cleanse = false;
+		pause = false;
 
 		jumpDown = false;
 		action1Down = false;
 		action2Down = false;
 		cleanseDown = false;
+		pauseDown = false;
 	}
 
 	private void UpdateVars()
@@ -99,5 +103,14 @@ public class CharInput : MonoBehaviour
 			cleanseDown = true;
 		}
 
+		// pause
+		if (Input.GetButton("Pause"))
+		{
+			pause = true;
+		}
+		if (Input.GetButtonDown("Pause"))
+		{
+			pauseDown = true;
+		}
 	}
 }
