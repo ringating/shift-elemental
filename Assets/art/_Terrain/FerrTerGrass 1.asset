@@ -21,7 +21,7 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0.03018868
       y: 0
-      width: 0.06113189
+      width: 0.08224802
       height: 0.66014296
     innerLeftCap:
       serializedVersion: 2
@@ -31,10 +31,10 @@ MonoBehaviour:
       height: 0
     rightCap:
       serializedVersion: 2
-      x: 0.86501366
+      x: 0.88462144
       y: 0
-      width: 0.097250514
-      height: 0.6597221
+      width: 0.0776427
+      height: 0.6643517
     innerRightCap:
       serializedVersion: 2
       x: 0
@@ -43,9 +43,9 @@ MonoBehaviour:
       height: 0
     body:
     - serializedVersion: 2
-      x: 0.091320574
+      x: 0.11243671
       y: 0
-      width: 0.13617264
+      width: 0.11505651
       height: 0.66014296
     - serializedVersion: 2
       x: 0.22749332
@@ -60,12 +60,12 @@ MonoBehaviour:
     - serializedVersion: 2
       x: 0.514178
       y: 0
-      width: 0.16787063
+      width: 0.16787061
       height: 0.66014296
     - serializedVersion: 2
       x: 0.6820483
       y: 0
-      width: 0.18296503
+      width: 0.20257288
       height: 0.66014296
     capOffset: 0
   - applyTo: 0
