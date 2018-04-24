@@ -17,7 +17,12 @@ public class IceSpear : MonoBehaviour
 
 	public float lifespan = 3f; // how long (once not flying) until it's destroyed (might eventually remove this for a "destroy when the player jumps off" idea instead)
 
-	// Use this for initialization
+	private bool firstCheck = true;
+	private float distanceAdjusted = 0;
+	private float maxDistanceAdjust = 1;
+	private float adjustStepSize = .1f;
+
+
 	void Start ()
 	{
 		rigid = GetComponent<Rigidbody2D>();
@@ -33,11 +38,27 @@ public class IceSpear : MonoBehaviour
 		}
 	}
 	
-	// Update is called once per frame
 	void Update ()
 	{
 		if (flying)
 		{
+			// offset if it spawns inside terrain
+			if (firstCheck)
+			{
+				while (distanceAdjusted < maxDistanceAdjust && Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11) | (1 << 12) | (1 << 13))))
+				{
+					if (goRight)
+					{
+						transform.position -= new Vector3(adjustStepSize, 0, 0);
+					}
+					else
+					{
+						transform.position += new Vector3(adjustStepSize, 0, 0);
+					}
+					distanceAdjusted += adjustStepSize;
+				}
+			}
+			
 			// move it
 			transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
 
@@ -71,6 +92,8 @@ public class IceSpear : MonoBehaviour
 				Destroy(this.gameObject);
 			}
 		}
+
+		firstCheck = false;
 	}
 
 	void LateUpdate()
