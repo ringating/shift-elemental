@@ -45,7 +45,7 @@ public class PromptHandler : MonoBehaviour
 		icePrompt.color = new Color(1, 1, 1, iceOpacity);
 		grassPrompt.color = new Color(1, 1, 1, grassOpacity);
 
-		if (cs.state == 0) { haveSeenNeutral = true; }
+		if (cs.state == 0 && cs.health != cs.maxHealth) { haveSeenNeutral = true; }
 		if (cs.state == 2) { haveSeenIce = true; }
 		if (cs.state == 3) { haveSeenGrass = true; }
 
