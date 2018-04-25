@@ -67,9 +67,6 @@ TagManager:
   - name: MainGroundDetail
     uniqueID: 827206665
     locked: 0
-  - name: Objects
-    uniqueID: 205037051
-    locked: 0
   - name: Player
     uniqueID: 3597611501
     locked: 0
@@ -78,6 +75,9 @@ TagManager:
     locked: 0
   - name: Player Particles
     uniqueID: 3013621551
+    locked: 0
+  - name: Objects
+    uniqueID: 205037051
     locked: 0
   - name: FG
     uniqueID: 734928747
