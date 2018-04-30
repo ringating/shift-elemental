@@ -7,8 +7,8 @@ public class AbsorbTrigger : MonoBehaviour
 	public CharState playerState;
 	private CircleCollider2D trigger;
 
-	private float activeDuration = 0.5f;
-	private float cooldownDuration = 0.2f;
+	public float activeDuration = 0.5f;
+	public float cooldownDuration = 0.2f;
 
 	private float activeTimer = 0f;
 	private float cooldownTimer = 0f;
