@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4408500824143268}
-  - component: {fileID: 114191702676449852}
+  - component: {fileID: 114209734174497456}
   - component: {fileID: 61205568974859436}
   m_Layer: 12
   m_Name: Scene Reset Trigger
@@ -66,7 +66,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114191702676449852
+--- !u!114 &114209734174497456
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -74,6 +74,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1749621669297812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8661ea21d416c4bba26750bcf3b0fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c10fc963d7788842a43f704cca6814c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

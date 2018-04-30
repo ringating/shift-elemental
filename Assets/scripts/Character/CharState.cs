@@ -233,6 +233,20 @@ public class CharState : MonoBehaviour
 	public void Die()
 	{
 		// this just resets the whole scene atm, change to something more reasonable later
-		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		// SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+		// hey, here's something more reasonable
+		CheckpointHandler temp = GetComponent<CheckpointHandler>();
+		if (temp)
+		{
+			health = maxHealth;
+			charge = 0;
+			state = 0;
+			temp.Respawn();
+		}
+		else
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
 	}
 }
