@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4224705550913890}
   - component: {fileID: 212797488690093612}
-  - component: {fileID: 114542882596580474}
+  - component: {fileID: 114169454144192364}
   m_Layer: 0
   m_Name: IceForm_Hands3a
   m_TagString: Untagged
@@ -84,7 +84,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4474509708768776}
   - component: {fileID: 212463199868923504}
-  - component: {fileID: 114318424098925624}
+  - component: {fileID: 114454835981694102}
   m_Layer: 0
   m_Name: IceForm_Hands1b
   m_TagString: Untagged
@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4119989113203778}
   - component: {fileID: 212326025216700946}
-  - component: {fileID: 114401028253211532}
+  - component: {fileID: 114018053371672252}
   m_Layer: 0
   m_Name: IceForm_Hands3b
   m_TagString: Untagged
@@ -213,7 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4327826016236934}
   - component: {fileID: 212198707253533942}
-  - component: {fileID: 114414506232002554}
+  - component: {fileID: 114952773484162278}
   m_Layer: 0
   m_Name: IceForm_Hands1a
   m_TagString: Untagged
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4853801101540482}
   - component: {fileID: 212552129864627932}
-  - component: {fileID: 114975890780404244}
+  - component: {fileID: 114963366307818082}
   m_Layer: 0
   m_Name: IceForm_Head
   m_TagString: Untagged
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4982013893394362}
   - component: {fileID: 212658194746669894}
-  - component: {fileID: 114762718527886350}
+  - component: {fileID: 114462029911125014}
   m_Layer: 0
   m_Name: IceForm_body
   m_TagString: Untagged
@@ -642,7 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4533149413685964}
   - component: {fileID: 212937235098489070}
-  - component: {fileID: 114401279041188458}
+  - component: {fileID: 114077822520710410}
   m_Layer: 0
   m_Name: IceForm_Hands2b
   m_TagString: Untagged
@@ -659,7 +659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4628635056959436}
   - component: {fileID: 212960319384901960}
-  - component: {fileID: 114021644012635186}
+  - component: {fileID: 114822456492087950}
   m_Layer: 0
   m_Name: IceForm_Hands2a
   m_TagString: Untagged
@@ -5842,37 +5842,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114021644012635186
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904719800408756}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-  - {fileID: 21300000, guid: c4f226817a9db024bb884fe35a1195ec, type: 3}
-  - {fileID: 21300000, guid: a63320f9647514b4ba39a5cbe16ee8da, type: 3}
---- !u!114 &114318424098925624
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123605258713952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-  - {fileID: 21300000, guid: 81a67b2402e752d4bb782c2b39f8e432, type: 3}
-  - {fileID: 21300000, guid: fc84f0005fa34e94cb791b79ef36920f, type: 3}
---- !u!114 &114401028253211532
+--- !u!114 &114018053371672252
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5887,7 +5857,7 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: fe3c1d85d593e5844ab9d79aae386a6a, type: 3}
   - {fileID: 21300000, guid: 49f5d1b0aacd32549aa8c71405bb2486, type: 3}
---- !u!114 &114401279041188458
+--- !u!114 &114077822520710410
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5902,22 +5872,7 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: e11b742266431fa4bae6ded0892b2973, type: 3}
   - {fileID: 21300000, guid: 3173eda52ba40d0438f2e8b8e4bb04fa, type: 3}
---- !u!114 &114414506232002554
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269239843369222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DisplayedSprite: 0
-  Sprites:
-  - {fileID: 21300000, guid: 32df857ae3c11c54cbf2cb7cc8acd949, type: 3}
-  - {fileID: 21300000, guid: 4c4eb6b5e34686b4a8a7ee4b80c02cd2, type: 3}
---- !u!114 &114542882596580474
+--- !u!114 &114169454144192364
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5932,20 +5887,22 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: af6eb9e0577ee2f47a5acabac8f59b43, type: 3}
   - {fileID: 21300000, guid: b2b077f5da1dc8d4bbe7c59cb0f39878, type: 3}
---- !u!114 &114692961643809852
+--- !u!114 &114454835981694102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1854069030719844}
+  m_GameObject: {fileID: 1123605258713952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8e9dda14b6f34517a0d598d3320a902, type: 3}
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sortingOrder: 0
-  applySpriterZOrder: 0
---- !u!114 &114762718527886350
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: 81a67b2402e752d4bb782c2b39f8e432, type: 3}
+  - {fileID: 21300000, guid: fc84f0005fa34e94cb791b79ef36920f, type: 3}
+--- !u!114 &114462029911125014
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5960,7 +5917,50 @@ MonoBehaviour:
   Sprites:
   - {fileID: 21300000, guid: 5efde4f607c360d418e7877730759eb2, type: 3}
   - {fileID: 21300000, guid: 207adabdb85e1194589cd1b4edb13e6a, type: 3}
---- !u!114 &114975890780404244
+--- !u!114 &114692961643809852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854069030719844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e9dda14b6f34517a0d598d3320a902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrder: 0
+  applySpriterZOrder: 0
+--- !u!114 &114822456492087950
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1904719800408756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: c4f226817a9db024bb884fe35a1195ec, type: 3}
+  - {fileID: 21300000, guid: a63320f9647514b4ba39a5cbe16ee8da, type: 3}
+--- !u!114 &114952773484162278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269239843369222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d8dc87df01e4958ab48153b19f0ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DisplayedSprite: 0
+  Sprites:
+  - {fileID: 21300000, guid: 32df857ae3c11c54cbf2cb7cc8acd949, type: 3}
+  - {fileID: 21300000, guid: 4c4eb6b5e34686b4a8a7ee4b80c02cd2, type: 3}
+--- !u!114 &114963366307818082
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
