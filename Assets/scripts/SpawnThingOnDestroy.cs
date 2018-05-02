@@ -6,8 +6,18 @@ public class SpawnThingOnDestroy : MonoBehaviour
 {
 	public GameObject thing;
 
+	private bool isQuitting;
+
+	void OnApplicationQuit()
+	{
+		isQuitting = true;
+	}
+
 	private void OnDestroy()
 	{
-		Instantiate(thing, transform.position, transform.rotation);
+		if (!isQuitting)
+		{
+			Instantiate(thing, transform.position, transform.rotation);
+		}
 	}
 }

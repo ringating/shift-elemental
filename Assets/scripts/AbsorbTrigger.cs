@@ -19,6 +19,8 @@ public class AbsorbTrigger : MonoBehaviour
 
 	public SpriteRenderer visuals;
 
+	private int prevState;
+
 	// Use this for initialization
 	private void Start ()
 	{
@@ -31,6 +33,8 @@ public class AbsorbTrigger : MonoBehaviour
 	// Update is called once per frame
 	private void Update ()
 	{
+		if (prevState != playerState.state) { inputReleased = false; } // an attempt to fix the insta-block upon using last charge
+
 		if (inputDown)
 		{
 			if (absorbAvailable && inputReleased)
@@ -48,7 +52,9 @@ public class AbsorbTrigger : MonoBehaviour
 		if (!absorbAvailable)
 		{
 			UpdateTimer();
-		} 
+		}
+
+		prevState = playerState.state;
 	}
 
 	public void SetInput(bool input)

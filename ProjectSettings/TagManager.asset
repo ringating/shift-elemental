@@ -27,9 +27,9 @@ TagManager:
   - IcedEnemies
   - checkpoint
   - checkpoint-player
-  - 
-  - 
-  - 
+  - death-particles
+  - pot
+  - pot-breaker
   - 
   - 
   - 

@@ -45,7 +45,7 @@ public class IceSpear : MonoBehaviour
 			// offset if it spawns inside terrain
 			if (firstCheck)
 			{
-				while (distanceAdjusted < maxDistanceAdjust && Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11) | (1 << 12) | (1 << 13) | (1 << 14) | (1 << 15) | (1 << 16))))
+				while (distanceAdjusted < maxDistanceAdjust && Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11) | (1 << 12) | (1 << 13) | (1 << 14) | (1 << 15) | (1 << 16) | (1 << 17) | (1 << 18) | (1 << 19))))
 				{
 					if (goRight)
 					{
@@ -64,7 +64,7 @@ public class IceSpear : MonoBehaviour
 
 			// get collisions
 			enemyHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, 1 << 10);
-			terrainHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11) | (1 << 12) | (1 << 13) | (1 << 14) | (1 << 15) | (1 << 16)) );
+			terrainHit = Physics2D.Linecast(transform.position + new Vector3(stickingOffset, 0, 0), transform.position, ~((1 << 10) | (1 << 9) | (1 << 8) | (1 << 11) | (1 << 12) | (1 << 13) | (1 << 14) | (1 << 15) | (1 << 16) | (1 << 17) | (1 << 18) | (1 << 19)) );
 
 			// check if collided.  ignore player collision, call Damage() if colliding with an enemy, StopFlying() if anything else
 			if (enemyHit)
