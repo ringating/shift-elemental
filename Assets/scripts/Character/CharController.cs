@@ -67,6 +67,12 @@ public class CharController : MonoBehaviour
 			Walk();
 			Drift();
 			PlatDrop();
+
+			// bad fix to prevent sliding on slopes
+			if (grounded && input.move == Vector2.zero)
+			{
+				rigid.velocity = new Vector2(0, rigid.velocity.y);
+			}
 		}
 
 		velocity = rigid.velocity;
