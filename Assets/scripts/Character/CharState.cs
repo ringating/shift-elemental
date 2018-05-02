@@ -19,6 +19,8 @@ public class CharState : MonoBehaviour
 	public float maxHealth = 100;
 	public float health;
 
+	public CheckpointHandler ch;
+
 	// default state
 	public AbsorbTrigger absorb;
 	public float healRate;
@@ -236,13 +238,12 @@ public class CharState : MonoBehaviour
 		// SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
 		// hey, here's something more reasonable
-		CheckpointHandler temp = GetComponent<CheckpointHandler>();
-		if (temp)
+		if (ch)
 		{
 			health = maxHealth;
 			charge = 0;
 			state = 0;
-			temp.Respawn();
+			ch.Respawn();
 		}
 		else
 		{

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CheckpointHandler : MonoBehaviour
 {
-	private Vector3 respawnPoint;
+	public Vector3 respawnPoint;
+	public Transform player;
 
 	private void Start ()
 	{
-		respawnPoint = transform.position;
+		respawnPoint = player.position;
 	}
 
 	public void SetRespawnPoint( Vector3 point )
@@ -18,6 +19,6 @@ public class CheckpointHandler : MonoBehaviour
 
 	public void Respawn ()
 	{
-		transform.position = respawnPoint;
+		player.position = respawnPoint;
 	}
 }

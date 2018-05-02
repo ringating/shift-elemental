@@ -10,7 +10,7 @@ public class Checkpoint : MonoBehaviour
 	{
 		CheckpointHandler temp = col.GetComponent<CheckpointHandler>();
 
-		if (col.tag == "Player" && temp)
+		if (temp)
 		{
 			temp.SetRespawnPoint(respawnPoint.position);
 		}
