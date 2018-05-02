@@ -6,6 +6,7 @@ public class CharInput : MonoBehaviour
 {
 	public bool useController;
 	public float deadzoneRadius;
+	public float triggerThreshold;
 
 	public Vector2 move = Vector2.zero;
 	public Vector2 aim = Vector2.zero;
@@ -22,6 +23,9 @@ public class CharInput : MonoBehaviour
 	public bool cleanseDown = false;
 	public bool pauseDown = false;
 
+	private bool leftTriggerWasDown = false;
+	private bool rightTriggerWasDown = false;
+
 	// Update is called once per frame
 	void LateUpdate()
 	{
@@ -31,6 +35,9 @@ public class CharInput : MonoBehaviour
 
 	private void ResetVars()
 	{
+		leftTriggerWasDown = action2;
+		rightTriggerWasDown = action1;
+
 		move = Vector2.zero;
 		aim = Vector2.zero;
 
@@ -50,14 +57,14 @@ public class CharInput : MonoBehaviour
 	private void UpdateVars()
 	{
 		// movement vector
-		move = new Vector2(Input.GetAxisRaw("Left Horizontal"), Input.GetAxisRaw("Left Vertical"));
+		move = new Vector2(Input.GetAxisRaw("Move Horizontal"), Input.GetAxisRaw("Move Vertical"));
 		if (move.magnitude < deadzoneRadius)
 		{
 			move = Vector2.zero;
 		}
 
 		//aiming vector
-		aim = new Vector2(Input.GetAxisRaw("Right Horizontal"), Input.GetAxisRaw("Right Vertical"));
+		aim = new Vector2(Input.GetAxisRaw("Aim Horizontal"), Input.GetAxisRaw("Aim Vertical"));
 		if (aim.magnitude < deadzoneRadius)
 		{
 			aim = Vector2.zero;
@@ -74,21 +81,21 @@ public class CharInput : MonoBehaviour
 		}
 
 		// action 1 (attack action)
-		if (Input.GetButton("Fire1"))
+		if (Input.GetButton("Action 1") || Input.GetAxisRaw("RightTrigger") > triggerThreshold)
 		{
 			action1 = true;
 		}
-		if (Input.GetButtonDown("Fire1"))
+		if (Input.GetButtonDown("Action 1") || (action1 && !rightTriggerWasDown))
 		{
 			action1Down = true;
 		}
 
 		// action 2 (movement action)
-		if (Input.GetButton("Fire2"))
+		if (Input.GetButton("Action 2") || Input.GetAxisRaw("LeftTrigger") > triggerThreshold)
 		{
 			action2 = true;
 		}
-		if (Input.GetButtonDown("Fire2"))
+		if (Input.GetButtonDown("Action 2") || (action2 && !leftTriggerWasDown) )
 		{
 			action2Down = true;
 		}
