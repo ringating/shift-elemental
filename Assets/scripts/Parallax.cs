@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-	public GameObject primarySection; // the one closest to center screen
-	public GameObject secondarySection; // the other one
-	private GameObject temp; // for swapping primary and secondary
+	public GameObject primarySection;
+	public GameObject secondarySection;
+	//private GameObject temp; 
 
 	public float sectionWidth;
 	public float panScalar;
@@ -15,6 +15,8 @@ public class Parallax : MonoBehaviour
 
 	void Start ()
 	{
+		panScalar = Mathf.Clamp01(panScalar);
+
 		prevX = transform.position.x;
 
 		primarySection.transform.localPosition = new Vector3(0, primarySection.transform.localPosition.y, primarySection.transform.localPosition.z);
@@ -45,10 +47,12 @@ public class Parallax : MonoBehaviour
 		}
 	}
 
+	/*
 	private void Swap()
 	{
 		temp = primarySection;
 		primarySection = secondarySection;
 		secondarySection = temp;
 	}
+	*/
 }
