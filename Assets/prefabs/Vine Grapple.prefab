@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4145666839458012}
+  - component: {fileID: 114474588141220932}
   - component: {fileID: 114599909794705982}
   - component: {fileID: 114422448836015742}
   - component: {fileID: 50238491930412416}
@@ -152,6 +153,18 @@ MonoBehaviour:
   rotationAnchor: {fileID: 4441931761239374}
   length: 1
   vinePart: {fileID: 1147479384866816, guid: c226c1d85f614b646888a8456cd2f01f, type: 2}
+--- !u!114 &114474588141220932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1341750331206162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d18b14965953a42a75a2c141457075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUntilDestroy: 10
 --- !u!114 &114574306294508984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -212,7 +225,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -697355795
-  m_SortingLayer: 9
+  m_SortingLayer: 8
   m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: efddf349deb072945b081a5bbeab3b52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

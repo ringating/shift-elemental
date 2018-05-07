@@ -44,7 +44,13 @@ public class CharState : MonoBehaviour
 	// audio
 	public AudioSource throwing;
 	public AudioSource hurt;
-	
+
+	// mask prefabs
+	public GameObject iceMaskLost;
+	public GameObject grassMaskLost;
+	public Transform iceMaskTransform;
+	public Transform grassMaskTransform;
+
 
 	void Start ()
 	{
@@ -62,12 +68,14 @@ public class CharState : MonoBehaviour
 
 		if (input.cleanse)
 		{
+			SpawnMaskParticle(); // only happens if state isn't 0, so no conditional needed
 			charge = 0;
 			state = 0;
 		}
 
 		if (charge <= 0)
 		{
+			SpawnMaskParticle(); // only happens if state isn't 0, so no conditional needed
 			state = 0;
 		}
 
@@ -248,6 +256,18 @@ public class CharState : MonoBehaviour
 		else
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
+	}
+
+	private void SpawnMaskParticle()
+	{
+		if (state == 2)
+		{
+			Instantiate(iceMaskLost, iceMaskTransform.position, iceMaskTransform.rotation);
+		}
+		else if (state == 3)
+		{
+			Instantiate(grassMaskLost, grassMaskTransform.position, grassMaskTransform.rotation);
 		}
 	}
 }
