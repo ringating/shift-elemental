@@ -166,7 +166,7 @@ public class CharState : MonoBehaviour
 			throwing.Play();
 		}
 
-		// aoe freeze (just spawn an ice block for beta)
+		// ice block
 		if (input.action2Down)
 		{
 			if (facingRight)
@@ -179,7 +179,7 @@ public class CharState : MonoBehaviour
 			}
 
 			throwing.Play();
-			charge = 0;
+			charge--;
 		}
 	}
 
@@ -211,7 +211,7 @@ public class CharState : MonoBehaviour
 		if (input.action2Down && input.aim != Vector2.zero)
 		{
 			Instantiate(vineGrapple, transform.position + new Vector3(input.aim.normalized.x * vineLaunchOffset, input.aim.normalized.y * vineLaunchOffset, 0), Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, input.aim))).GetComponent<VineGrapple>().cs = this;
-			charge = 0;
+			charge--;
 		}
 
 	}
