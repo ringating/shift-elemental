@@ -26,6 +26,9 @@ public class CharInput : MonoBehaviour
 	private bool leftTriggerWasDown = false;
 	private bool rightTriggerWasDown = false;
 
+	[HideInInspector]
+	public Vector2 aimOverwrite = Vector2.zero;
+
 	// Update is called once per frame
 	void LateUpdate()
 	{
@@ -65,6 +68,13 @@ public class CharInput : MonoBehaviour
 
 		//aiming vector
 		aim = new Vector2(Input.GetAxisRaw("Aim Horizontal"), Input.GetAxisRaw("Aim Vertical"));
+
+		if (aimOverwrite != Vector2.zero)
+		{
+			aim = aimOverwrite;
+			aimOverwrite = Vector2.zero;
+		}
+
 		if (aim.magnitude < deadzoneRadius)
 		{
 			aim = Vector2.zero;

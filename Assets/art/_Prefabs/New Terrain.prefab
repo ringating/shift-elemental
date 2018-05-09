@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fill: 0
   fillY: 0
-  fillZ: 0.05
+  fillZ: 1
   invertFillBorder: {x: 3.12, y: 0}
   splitCorners: 0
   smoothPath: 0
