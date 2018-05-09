@@ -20,6 +20,7 @@ public class CharState : MonoBehaviour
 	public float health;
 
 	public CheckpointHandler ch;
+	public Animator ani;
 
 	// default state
 	public AbsorbTrigger absorb;
@@ -68,9 +69,14 @@ public class CharState : MonoBehaviour
 
 		if (input.cleanse)
 		{
-			SpawnMaskParticle(); // only happens if state isn't 0, so no conditional needed
-			charge = 0;
-			state = 0;
+			
+			if (state != 0)
+			{
+				SpawnMaskParticle();
+				charge = 0;
+				state = 0;
+				ani.SetBool("vine", true);
+			}
 		}
 
 		if (charge <= 0)
@@ -172,6 +178,9 @@ public class CharState : MonoBehaviour
 
 			// sound
 			throwing.Play();
+
+			// animation
+			ani.SetBool("spear", true);
 		}
 
 		// ice block
@@ -188,6 +197,7 @@ public class CharState : MonoBehaviour
 
 			throwing.Play();
 			charge--;
+			ani.SetBool("summon", true);
 		}
 	}
 
@@ -213,6 +223,9 @@ public class CharState : MonoBehaviour
 
 			// sound
 			throwing.Play();
+
+			// animation
+			ani.SetBool("spear", true);
 		}
 
 		// vine grapple
@@ -220,6 +233,8 @@ public class CharState : MonoBehaviour
 		{
 			Instantiate(vineGrapple, transform.position + new Vector3(input.aim.normalized.x * vineLaunchOffset, input.aim.normalized.y * vineLaunchOffset, 0), Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, input.aim))).GetComponent<VineGrapple>().cs = this;
 			charge--;
+			// animation
+			ani.SetBool("vine", true);
 		}
 
 	}
@@ -233,6 +248,7 @@ public class CharState : MonoBehaviour
 	{
 		health -= damage;
 		hurt.Play();
+		ani.SetBool("damage", true);
 	}
 
 	public void Damaged(int damage)

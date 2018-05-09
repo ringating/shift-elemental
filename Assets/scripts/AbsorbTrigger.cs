@@ -21,6 +21,8 @@ public class AbsorbTrigger : MonoBehaviour
 
 	private int prevState;
 
+	public Animator ani;
+
 	// Use this for initialization
 	private void Start ()
 	{
@@ -73,6 +75,8 @@ public class AbsorbTrigger : MonoBehaviour
 		//Debug.Log("EnableAbsorb()");
 		trigger.enabled = true;
 		visuals.enabled = true;
+
+		ani.SetBool("block", true);
 
 		playerState.ctrl.Stop();
 	}
