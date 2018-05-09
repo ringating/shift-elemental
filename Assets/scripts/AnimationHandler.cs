@@ -10,6 +10,7 @@ public class AnimationHandler : MonoBehaviour
 
 	public float smallAniTime;
 
+	[SerializeField]
 	private float smallTimer;
 
 	void Start ()
@@ -17,7 +18,7 @@ public class AnimationHandler : MonoBehaviour
 		smallTimer = smallAniTime;
 	}
 	
-	void Update ()
+	void LateUpdate ()
 	{
 		if (ani.GetBool("damage") || ani.GetBool("summon") || ani.GetBool("spear") || ani.GetBool("vine") || ani.GetBool("block"))
 		{
