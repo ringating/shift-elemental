@@ -31,7 +31,7 @@ public class CharState : MonoBehaviour
 
 	// ice state
 	public GameObject iceSpear;
-	public float iceSpearLaunchOffset;
+	public Vector2 iceSpearLaunchOffset;
 	public float iceSpearHopSpeed;
 
 	public GameObject iceBlock;
@@ -163,11 +163,11 @@ public class CharState : MonoBehaviour
 		{
 			if (facingRight)
 			{
-				Instantiate(iceSpear, transform.position + new Vector3(iceSpearLaunchOffset,0,0), Quaternion.identity).GetComponent<IceSpear>().goRight = true;
+				Instantiate(iceSpear, transform.position + new Vector3(iceSpearLaunchOffset.x, iceSpearLaunchOffset.y, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = true;
 			}
 			else
 			{
-				Instantiate(iceSpear, transform.position + new Vector3(-iceSpearLaunchOffset,0,0), Quaternion.identity).GetComponent<IceSpear>().goRight = false;
+				Instantiate(iceSpear, transform.position + new Vector3(-iceSpearLaunchOffset.x, iceSpearLaunchOffset.y, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = false;
 			}
 
 			// also jump a tiny bit
@@ -188,11 +188,11 @@ public class CharState : MonoBehaviour
 		{
 			if (facingRight)
 			{
-				Instantiate(iceBlock, transform.position + new Vector3(iceSpearLaunchOffset, 0, 0), Quaternion.identity);
+				Instantiate(iceBlock, transform.position + new Vector3(iceSpearLaunchOffset.x, iceSpearLaunchOffset.y, 0), Quaternion.identity);
 			}
 			else
 			{
-				Instantiate(iceBlock, transform.position + new Vector3(-iceSpearLaunchOffset, 0, 0), Quaternion.identity);
+				Instantiate(iceBlock, transform.position + new Vector3(-iceSpearLaunchOffset.x, iceSpearLaunchOffset.y, 0), Quaternion.identity);
 			}
 
 			throwing.Play();
@@ -208,11 +208,11 @@ public class CharState : MonoBehaviour
 		{
 			if (facingRight)
 			{
-				Instantiate(betaGrassSpear, transform.position + new Vector3(iceSpearLaunchOffset, 0, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = true;
+				Instantiate(betaGrassSpear, transform.position + new Vector3(iceSpearLaunchOffset.x, iceSpearLaunchOffset.y, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = true;
 			}
 			else
 			{
-				Instantiate(betaGrassSpear, transform.position + new Vector3(-iceSpearLaunchOffset, 0, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = false;
+				Instantiate(betaGrassSpear, transform.position + new Vector3(-iceSpearLaunchOffset.x, iceSpearLaunchOffset.y, 0), Quaternion.identity).GetComponent<IceSpear>().goRight = false;
 			}
 
 			// also jump a tiny bit

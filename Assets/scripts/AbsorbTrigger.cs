@@ -78,7 +78,7 @@ public class AbsorbTrigger : MonoBehaviour
 
 		ani.SetBool("block", true);
 
-		playerState.ctrl.Stop();
+		//playerState.ctrl.Stop();
 	}
 
 	private void DisableAbsorb()
