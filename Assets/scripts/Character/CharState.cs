@@ -21,6 +21,7 @@ public class CharState : MonoBehaviour
 
 	public CheckpointHandler ch;
 	public Animator ani;
+	public CameraShake camShake;
 
 	// default state
 	public AbsorbTrigger absorb;
@@ -249,6 +250,7 @@ public class CharState : MonoBehaviour
 		health -= damage;
 		hurt.Play();
 		ani.SetBool("damage", true);
+		camShake.Shake();
 	}
 
 	public void Damaged(int damage)
