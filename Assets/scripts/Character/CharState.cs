@@ -26,6 +26,7 @@ public class CharState : MonoBehaviour
 	// default state
 	public AbsorbTrigger absorb;
 	public float healRate;
+	public int healCharge = 0;
 	
 	// fire state
 	// (probably not)

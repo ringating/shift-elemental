@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212666502126847546}
   - component: {fileID: 114478289433273970}
   - component: {fileID: 114837572144464068}
+  - component: {fileID: 114207300484378240}
   - component: {fileID: 61321332814538888}
   m_Layer: 18
   m_Name: pot_skinny destrucctable
@@ -68,6 +69,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7, y: 1.66}
   m_EdgeRadius: 0
+--- !u!114 &114207300484378240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1176181626296818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 781d05ae6b0e8484d9e0bc9b9b6778fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114478289433273970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a9d8ee0ce459894fae67ee7d17a3631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ph: {fileID: 114207300484378240}
 --- !u!212 &212666502126847546
 SpriteRenderer:
   m_ObjectHideFlags: 1
