@@ -50,6 +50,8 @@ public class CharController : MonoBehaviour
 	public AudioSource footstep;
 	public AudioSource jump;
 
+	private bool hasIceJump = true;
+
 	void Start ()
 	{
 		rigid = GetComponent<Rigidbody2D>();
@@ -80,6 +82,8 @@ public class CharController : MonoBehaviour
 
 		if (grounded)
 		{
+			hasIceJump = true;
+
 			ani.SetBool("rising", false);
 			ani.SetBool("falling", false);
 
@@ -234,9 +238,10 @@ public class CharController : MonoBehaviour
 
 	public void IceJump(float jumpSpd)
 	{
-		if (!grounded)
+		if (!grounded && hasIceJump)
 		{
 			rigid.velocity = new Vector2(rigid.velocity.x, jumpSpd);
+			hasIceJump = false;
 		}
 	}
 
