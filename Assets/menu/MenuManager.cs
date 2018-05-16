@@ -1,17 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+//using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour 
 {
 	public GameObject main;
 	public GameObject about;
 	public GameObject controls;
+	public GameObject intro;
 
 	public void ToGame()
 	{
-		SceneManager.LoadScene("beta");
+		//SceneManager.LoadScene("beta");
+		main.SetActive(false);
+		intro.SetActive(true);
 	}
 
 	public void ToAbout()
