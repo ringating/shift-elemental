@@ -15,6 +15,15 @@ public class HydraHeadAni : MonoBehaviour
 	public Transform player;
 	public float activeRange;
 
+	public GameObject rapidSpawnerPrefab;
+
+	public GameObject iceAttack;
+	public GameObject grassAttack;
+
+	private RapidSpawner temp;
+
+	public Transform projectileSpawnPoint;
+
 	void Start ()
 	{
 		timer = cooldown;
@@ -46,6 +55,7 @@ public class HydraHeadAni : MonoBehaviour
 					case 2:
 						Debug.Log(name + ", lean forward");
 						ani.SetInteger("state", 2);
+						Attack(iceAttack, 3, 0.2f, 0.5f, 6, 10, 2);
 						break;
 
 					case 3:
@@ -65,5 +75,19 @@ public class HydraHeadAni : MonoBehaviour
 
 			timer = cooldown;
 		}
+	}
+
+	private void Attack(GameObject projectile, int count, float interval, float delay, float speed, float damage, float lifetime)
+	{
+		temp = Instantiate(rapidSpawnerPrefab, transform.position, transform.rotation).GetComponent<RapidSpawner>();
+		temp.player = player;
+		temp.spawnPoint = projectileSpawnPoint;
+		temp.toSpawn = projectile;
+		temp.count = count;
+		temp.interval = interval;
+		temp.timer = delay;
+		temp.speed = speed;
+		temp.damage = damage;
+		temp.lifetime = lifetime;
 	}
 }
