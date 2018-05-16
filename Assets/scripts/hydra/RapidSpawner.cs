@@ -17,6 +17,8 @@ public class RapidSpawner : MonoBehaviour
 	public float speed;
 	public float damage;
 	public float lifetime;
+
+	public GameObject sound;
 	
 	void Update ()
 	{
@@ -35,6 +37,8 @@ public class RapidSpawner : MonoBehaviour
 				temp.speed = speed;
 				temp.GetComponent<EnemyAttack>().damage = damage;
 				temp.GetComponent<DestroyTimed>().timeUntilDestroy = lifetime;
+
+				if (sound) { Instantiate(sound, spawnPoint.position, Quaternion.identity); }
 			}
 		}
 
