@@ -69,7 +69,7 @@ public class CharInput : MonoBehaviour
 		//aiming vector
 		aim = new Vector2(Input.GetAxisRaw("Aim Horizontal"), Input.GetAxisRaw("Aim Vertical"));
 
-		if (aimOverwrite != Vector2.zero)
+		if (aimOverwrite != Vector2.zero && aim == Vector2.zero)
 		{
 			aim = aimOverwrite;
 			aimOverwrite = Vector2.zero;

@@ -28,6 +28,8 @@ public class CharState : MonoBehaviour
 	//public float healRate;
 	public int healCharge = 0;
 	public float healAmount;
+	public GameObject cantHealSound;
+	//public GameObject potUIHighlight;
 	
 	// fire state
 	// (probably not)
@@ -151,10 +153,11 @@ public class CharState : MonoBehaviour
 			else
 			{
 				// play sound indicating can't heal
-
+				Instantiate(cantHealSound, transform.position, Quaternion.identity);
 				if (healCharge < 1)
 				{
 					// instantiate object to highlight lack of pots
+					
 				}
 			}
 
