@@ -52,6 +52,9 @@ TagManager:
   - name: BG1
     uniqueID: 2716742171
     locked: 0
+  - name: Objects
+    uniqueID: 205037051
+    locked: 0
   - name: Second Ground
     uniqueID: 3174325373
     locked: 0
@@ -76,8 +79,8 @@ TagManager:
   - name: Player Particles
     uniqueID: 3013621551
     locked: 0
-  - name: Objects
-    uniqueID: 205037051
+  - name: Pots
+    uniqueID: 1369069745
     locked: 0
   - name: FG
     uniqueID: 734928747
