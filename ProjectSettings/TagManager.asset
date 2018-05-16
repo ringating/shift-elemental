@@ -9,6 +9,7 @@ TagManager:
   - AbsorbTrigger
   - IcedEnemy
   - EnemyAttack
+  - Hydra
   layers:
   - Default
   - TransparentFX

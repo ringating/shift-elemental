@@ -8,10 +8,18 @@ public class AboutToMain : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetButtonDown("Submit"))
+		if (Input.GetButtonDown("Jump") || Input.GetButtonDown("Action 1") || Input.GetButtonDown("Action 2") || Input.GetButtonDown("Cleanse") || Input.GetButtonDown("Pause"))
 		{
 			mm.main.SetActive(true);
-			mm.about.SetActive(false);
+
+			if (mm.about.activeSelf)
+			{
+				mm.about.SetActive(false);
+			}
+			else if (mm.controls.activeSelf)
+			{
+				mm.controls.SetActive(false);
+			}
 		}
 	}
 }

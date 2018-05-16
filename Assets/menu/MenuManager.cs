@@ -7,6 +7,7 @@ public class MenuManager : MonoBehaviour
 {
 	public GameObject main;
 	public GameObject about;
+	public GameObject controls;
 
 	public void ToGame()
 	{
@@ -18,6 +19,12 @@ public class MenuManager : MonoBehaviour
 		//SceneManager.LoadScene("about");
 		main.SetActive(false);
 		about.SetActive(true);
+	}
+
+	public void ToControls()
+	{
+		main.SetActive(false);
+		controls.SetActive(true);
 	}
 
 	public void Quit()

@@ -129,8 +129,19 @@ public class IceSpear : MonoBehaviour
 	void Damage(GameObject enemy)
 	{
 		// do whatever happens when an enemy is hit by an icicle
-		Destroy(enemy);
 		Destroy(gameObject);
+		if (enemy.tag != "Hydra")
+		{
+			Destroy(enemy);
+		}
+		else
+		{
+			Debug.Log("hit a hydra");
+			HydraStateHandler temp;
+			temp = enemy.GetComponent<HydraStateHandler>();
+			temp.state++;
+		}
+		
 	}
 
 	void StopFlying()
