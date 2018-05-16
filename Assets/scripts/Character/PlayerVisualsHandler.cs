@@ -8,7 +8,7 @@ public class PlayerVisualsHandler : MonoBehaviour
 	public CharState cs;
 
 	public EntityRenderer neutralVisuals;
-	public SpriteRenderer iceVisuals;
+	public EntityRenderer iceVisuals;
 	public SpriteRenderer grassVisuals;
 
 	public SpriteRenderer[] hairPieces;

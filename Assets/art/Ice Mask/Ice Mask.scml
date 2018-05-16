@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="IceForm_Head.png" width="56" height="44" pivot_x="0.511335" pivot_y="0.0514469"/>
+        <file id="1" name="IceForm_Crown1.png" width="7" height="5" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="IceForm_Crown2.png" width="8" height="6" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="3" name="IceForm_Crown6.png" width="5" height="5" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="4" name="IceForm_Crown5.png" width="6" height="5" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="5" name="IceForm_Crown4.png" width="8" height="11" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="6" name="IceForm_Crown3.png" width="9" height="8" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <entity id="0" name="Ice Form">
+        <obj_info name="iceformcrown1bone" type="bone" w="11.0812" h="1.4"/>
+        <obj_info name="iceformheadbone" type="bone" w="35.2215" h="1.4"/>
+        <obj_info name="iceformMainvone" type="bone" w="5.25" h="1.4"/>
+        <obj_info name="bone_000" type="bone" w="9.3949" h="1.4"/>
+        <obj_info name="bone_001" type="bone" w="8.93696" h="1.4"/>
+        <obj_info name="bone_002" type="bone" w="9.27625" h="1.4"/>
+        <obj_info name="bone_003" type="bone" w="7.35535" h="1.4"/>
+        <obj_info name="bone_004" type="bone" w="7.96422" h="1.4"/>
+        <animation id="0" name="IceIdle1" length="2500" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="7" key="0"/>
+                    <bone_ref id="1" timeline="8" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="9" key="0"/>
+                    <bone_ref id="3" parent="1" timeline="10" key="0"/>
+                    <bone_ref id="4" parent="1" timeline="11" key="0"/>
+                    <bone_ref id="5" parent="1" timeline="12" key="0"/>
+                    <bone_ref id="6" parent="1" timeline="13" key="0"/>
+                    <bone_ref id="7" parent="1" timeline="14" key="0"/>
+                    <object_ref id="0" parent="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="3" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="4" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="5" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="2" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" parent="6" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" parent="7" timeline="6" key="0" z_index="6"/>
+                </key>
+                <key id="1" time="1250">
+                    <bone_ref id="0" timeline="7" key="0"/>
+                    <bone_ref id="1" timeline="8" key="0"/>
+                    <bone_ref id="2" parent="1" timeline="9" key="1"/>
+                    <bone_ref id="3" parent="1" timeline="10" key="1"/>
+                    <bone_ref id="4" parent="1" timeline="11" key="1"/>
+                    <bone_ref id="5" parent="1" timeline="12" key="1"/>
+                    <bone_ref id="6" parent="1" timeline="13" key="1"/>
+                    <bone_ref id="7" parent="1" timeline="14" key="1"/>
+                    <object_ref id="0" parent="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="3" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="4" timeline="2" key="0" z_index="2"/>
+                    <object_ref id="3" parent="5" timeline="3" key="0" z_index="3"/>
+                    <object_ref id="4" parent="2" timeline="4" key="0" z_index="4"/>
+                    <object_ref id="5" parent="6" timeline="5" key="0" z_index="5"/>
+                    <object_ref id="6" parent="7" timeline="6" key="0" z_index="6"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="IceForm_Head">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="2.305899" y="3.113643" angle="269.288288"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="IceForm_Crown1">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="2.976166" y="-0.263806" angle="248.919375"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="IceForm_Crown2">
+                <key id="0" spin="0">
+                    <object folder="0" file="2" x="4.26086" y="0.146877" angle="261.430923"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="IceForm_Crown3">
+                <key id="0" spin="0">
+                    <object folder="0" file="6" x="4.428949" y="-0.066811" angle="261.672675"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="IceForm_Crown4">
+                <key id="0" spin="0">
+                    <object folder="0" file="5" x="4.227752" y="-0.731122" angle="271.59114"/>
+                </key>
+            </timeline>
+            <timeline id="5" name="IceForm_Crown5">
+                <key id="0" spin="0">
+                    <object folder="0" file="4" x="3.149457" y="-0.739685" angle="289.814277"/>
+                </key>
+            </timeline>
+            <timeline id="6" name="IceForm_Crown6">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="4.054394" y="0.050843" angle="298.976624"/>
+                </key>
+            </timeline>
+            <timeline id="7" obj="2" name="iceformMainvone" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-1.807639" y="40.790972" angle="90"/>
+                </key>
+            </timeline>
+            <timeline id="8" obj="1" name="iceformheadbone" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="-1.697983" y="46.88788" angle="88.72458"/>
+                </key>
+            </timeline>
+            <timeline id="9" obj="0" name="iceformcrown1bone" object_type="bone">
+                <key id="0">
+                    <bone x="50.441542" y="-1.461319" angle="357.697148"/>
+                </key>
+                <key id="1" time="1250" spin="-1">
+                    <bone x="51.74561" y="-1.432285" angle="19.503309"/>
+                </key>
+            </timeline>
+            <timeline id="10" obj="3" name="bone_000" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="42.79151" y="21.454926" angle="20.368912"/>
+                </key>
+                <key id="1" time="1250" spin="0">
+                    <bone x="48.564548" y="22.949649" angle="20.368912"/>
+                </key>
+            </timeline>
+            <timeline id="11" obj="4" name="bone_001" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="50.514657" y="12.063529" angle="7.857365"/>
+                </key>
+                <key id="1" time="1250">
+                    <bone x="37.496659" y="13.822985" angle="348.0349"/>
+                </key>
+            </timeline>
+            <timeline id="12" obj="5" name="bone_002" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="37.428896" y="1.525747" angle="7.615612"/>
+                </key>
+                <key id="1" time="1250">
+                    <bone x="50.249282" y="8.642141" angle="345.330024"/>
+                </key>
+            </timeline>
+            <timeline id="13" obj="6" name="bone_003" object_type="bone">
+                <key id="0">
+                    <bone x="51.699043" y="-10.452272" angle="339.474011"/>
+                </key>
+                <key id="1" time="1250" spin="-1">
+                    <bone x="39.287799" y="-5.263827" angle="358.09559"/>
+                </key>
+            </timeline>
+            <timeline id="14" obj="7" name="bone_004" object_type="bone">
+                <key id="0" spin="-1">
+                    <bone x="43.953737" y="-15.406385" angle="330.311663"/>
+                </key>
+                <key id="1" time="1250">
+                    <bone x="51.426069" y="-13.532282" angle="304.965488"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

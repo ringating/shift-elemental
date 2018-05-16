@@ -25,8 +25,9 @@ public class CharState : MonoBehaviour
 
 	// default state
 	public AbsorbTrigger absorb;
-	public float healRate;
+	//public float healRate;
 	public int healCharge = 0;
+	public float healAmount;
 	
 	// fire state
 	// (probably not)
@@ -138,12 +139,23 @@ public class CharState : MonoBehaviour
 		absorb.SetInput(input.action1);
 
 		// heal?
-		if (input.action2)
+		if (input.action2Down)
 		{
-			if (health < maxHealth)
+			if (health < maxHealth && healCharge >= 1)
 			{
-				health += Time.deltaTime * healRate;
-				ctrl.Stop();
+				//health += Time.deltaTime * healRate;
+				//ctrl.Stop();
+				healCharge--;
+				health += healAmount;
+			}
+			else
+			{
+				// play sound indicating can't heal
+
+				if (healCharge < 1)
+				{
+					// instantiate object to highlight lack of pots
+				}
 			}
 
 			if (health > maxHealth)
