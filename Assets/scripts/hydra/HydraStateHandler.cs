@@ -19,6 +19,10 @@ public class HydraStateHandler : MonoBehaviour
 
 	private bool died = false;
 
+	private int prevState;
+
+	public GameObject roarSoundPrefab;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -28,6 +32,8 @@ public class HydraStateHandler : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (prevState < state) { Instantiate(roarSoundPrefab, transform.position, Quaternion.identity); }
+
 		switch (state)
 		{
 			case 1:
@@ -74,5 +80,7 @@ public class HydraStateHandler : MonoBehaviour
 			default:
 				break;
 		}
+
+		prevState = state;
 	}
 }
